@@ -1,0 +1,17 @@
+{
+  "home": {
+    "introtext": {
+      "title": "APP NAME",
+      "paragraphs": [
+        {
+          "id": 1,
+          "content": "What am I for? What do I do?"
+        },
+        {
+          "id": 2,
+          "content": "Choose a category and receive a random pro tip."
+        }
+      ]
+    }
+  }
+}

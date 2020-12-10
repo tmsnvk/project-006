@@ -4,7 +4,7 @@
     "utilities"
   ],
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
     "lib": [

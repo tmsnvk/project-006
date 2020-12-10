@@ -1,23 +1,34 @@
 import React from "react";
-import { connectToDatabase } from "../utilities/mongodb/mongodb";
+import { connectToDatabase } from "utilities/mongodb/mongodb";
+import { StyledIcon } from "components/shared/utilities";
+import iconList from "utilities/iconList/iconList";
 
-export async function getServerSideProps() {
+export const getServerSideProps = async () => {
   const { db } = await connectToDatabase();
-  
-  const hellotext = await db
-  .collection("data")
-  .findOne()
+
+  const data = await db
+    .collection("data")
+    .findOne()
 
   return {
     props: {
-      data: JSON.parse(JSON.stringify(hellotext)),
+      data: JSON.parse(JSON.stringify(data)),
     },
   };
 }
 
 type TComponent = {
   data: {
-    hello: string;
+    categories: {
+      health: {
+        id: number;
+        content: string;
+      }[];
+      hobbies: {
+        id: number;
+        content: string;
+      }[];
+    }
   }
 }
 
@@ -25,7 +36,8 @@ const Card = ({ data }: TComponent) => {
 
   return (
     <div>
-      aaa {data.hello}
+      aaa {data.categories.health[0].content}
+      <StyledIcon icon={iconList.linkedIn}></StyledIcon>
     </div>
   );
 };
