@@ -6,11 +6,12 @@ const theme: DefaultTheme = {
     backgroundPrimaryLight: "#fee09f", // yellow
     primaryDark: "#2d2d2d", // dark gray
     primaryLight: "#ffd479", // light gray
-    secondary: "#00af43", // green
+    secondary: "#2d2d2d", // blue
     shadow: "#6ab0f3" // blue
   },
   fontFamily: {
-    main: `"Roboto Mono", sans-serif`
+    main: `"Roboto Mono", sans-serif`,
+    secondary: `"Roboto Condensed", sans-serif`
   },
   fontSize: {
     default: "1rem",

@@ -12,6 +12,20 @@
           "content": "Choose a category and receive a random pro tip."
         }
       ]
+    },
+    "categories": {
+      "names": [
+        { "id": 1, "name": "health", "icon": ["fas", "code-branch"] },
+        { "id": 2, "name": "hobbies", "icon": ["fas", "code-branch"] },
+        { "id": 3, "name": "pets", "icon": ["fas", "code-branch"] },
+        { "id": 4, "name": "workplace", "icon": ["fas", "code-branch"] },
+        { "id": 5, "name": "sports", "icon": ["fas", "code-branch"] },
+        { "id": 6, "name": "technology", "icon": ["fas", "code-branch"] },
+        { "id": 7, "name": "social", "icon": ["fas", "code-branch"] }
+      ]
+    },
+    "random": {
+      "title": "Give me a random one!"
     }
   }
 }

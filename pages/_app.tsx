@@ -1,6 +1,8 @@
 import React from "react";
 import { AppProps } from "next/app";
+import { ContentContextProvider } from "utilities/state/ContentContext";
 import { ThemeProvider } from "styled-components";
+import { Navbar, Footer } from "components/main";
 import GlobalStyle from "utilities/theme/GlobalStyle";
 import theme from "utilities/theme/theme";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -12,7 +14,11 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Component {...pageProps} />
+      <Navbar />
+      <ContentContextProvider>
+        <Component {...pageProps} />
+      </ContentContextProvider>
+      {/* <Footer /> */}
     </ThemeProvider>
   );
 };

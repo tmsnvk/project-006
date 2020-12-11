@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import siteData from "utilities/data/siteData.json";
 
-const ComponentContainer = styled.div`
+const ComponentContainer = styled.section`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -27,13 +27,8 @@ const ContentParagraph = styled.p`
 
 `;
 
-type TRender = {
-  content: string;
-  id: number;
-}
-
 const IntroText = () => {
-  const renderData = siteData.home.introtext.paragraphs.map(({ content, id }: TRender) => {
+  const renderData = siteData.home.introtext.paragraphs.map(({ content, id }) => {
     return (
       <ContentParagraph key={id}>
         {content}
