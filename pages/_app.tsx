@@ -1,6 +1,5 @@
 import React from "react";
 import { AppProps } from "next/app";
-import { ContentContextProvider } from "utilities/state/ContentContext";
 import { ThemeProvider } from "styled-components";
 import { Navbar, Footer } from "components/main";
 import GlobalStyle from "utilities/theme/GlobalStyle";
@@ -15,9 +14,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
-      <ContentContextProvider>
-        <Component {...pageProps} />
-      </ContentContextProvider>
+      <Component {...pageProps} />
       {/* <Footer /> */}
     </ThemeProvider>
   );

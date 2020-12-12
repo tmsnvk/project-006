@@ -4,19 +4,17 @@ import styled from "styled-components";
 
 const SectionContainer = styled.nav`
 	width: 100%;
-	position: fixed;
-  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: ${({ theme }) => theme.color.primaryLight};
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.shadow};
   padding: 2rem 0 2rem 0;
+  margin: 0 auto;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;
     flex-direction: row;
+    width: 80%;
     padding: 2rem 5rem 2rem 5rem;
   }
 `;
@@ -27,20 +25,22 @@ const LogoContainer = styled.div`
 
 const PageLinkContainer = styled.div`
   font-size: ${({ theme }) => theme.fontSize.large};
+  margin: 2rem 0 0 0;
 `;
 
 const PageLink = styled.a`
+  padding: 1rem 3rem 1rem 3rem;
+  margin: 5rem 1rem 1rem 1rem;
+  background-color: ${({ theme }) => theme.color.backgroundPrimaryDark};
   font-weight: 600;
   letter-spacing: 0.1rem;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.shadowLight};
+  border-radius: 0.75rem;
   cursor: pointer;
 
   &:hover {
-    color: ${({ theme }) => theme.color.secondary};
-  }
-
-  @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    padding: 1rem 2rem 1rem 2rem;
+    background-color: ${({ theme }) => theme.color.secondary};
+    box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.shadowDark};
   }
 `;
 

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const StyledIcon = styled(FontAwesomeIcon)`
   display: inline-block;
   color: ${({ theme }) => theme.color.primaryDark};
-  font-size: ${({ theme }) => theme.fontSize.medium};
+  font-size: ${({ theme }) => theme.fontSize.large};
   margin: 0 0.5rem 0 0.5rem;
 `;
 

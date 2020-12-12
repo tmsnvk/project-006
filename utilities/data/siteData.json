@@ -25,7 +25,13 @@
       ]
     },
     "random": {
-      "title": "Give me a random one!"
+      "title": "Get me a random one!"
+    }
+  },
+  "random": {
+    "choice": {
+      "category": "Choose a category!",
+      "random": "Another random one!"
     }
   }
 }

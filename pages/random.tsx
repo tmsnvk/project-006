@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import Head from "next/head";
-import Router from "next/router";
-import { ContentContext } from "utilities/state/ContentContext";
+import { InferGetServerSidePropsType } from "next";
+import { connectToDatabase } from "utilities/mongodb/mongodb";
 import styled from "styled-components";
+import { NextChoice, RandomCard } from "components/page/random";
 
 const LayoutContainer = styled.main`
   display: grid;
@@ -16,14 +17,37 @@ const LayoutContainer = styled.main`
   }
 `;
 
-const Container = styled.div`
-  margin: 20rem auto 0;
-  font-size: 2rem;
-`;
+type TData = {
+  category: string;
+  content: {
+    id: number;
+    content: string;
+  }[];
+}
 
-const Random = () => {
-  const { dataFetch } = useContext(ContentContext);
+export const getServerSideProps = async () => {
+  try {
+    const { db } = await connectToDatabase();
 
+    const getRandomNumber = (min: number, max: number) => Math.floor(Math.random() * (max - min) + min);
+    const categoryList = ["health", "social", "workplace"];
+
+    const response: TData = await db.collection("data").findOne({ "category": categoryList[getRandomNumber(0, categoryList.length)] });
+
+    return {
+      props: {
+        data: {
+          category: response.category,
+          content: response.content[getRandomNumber(0, response.content.length)]
+        }
+      }
+    };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const Random = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   return (
     <>
       <Head>
@@ -31,14 +55,8 @@ const Random = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutContainer>
-        <Container>
-          {dataFetch.category}
-        </Container>
-        <Container>
-          {dataFetch.id}
-          {dataFetch.content}
-        </Container>
-        {dataFetch.category === "" ? <div>Request another tip</div> : null}
+        <RandomCard data={data} />
+        <NextChoice />
       </LayoutContainer>
     </>
   );

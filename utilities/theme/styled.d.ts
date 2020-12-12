@@ -8,7 +8,8 @@ declare module "styled-components" {
       primaryDark: string;
       primaryLight: string;
       secondary: string;
-      shadow: string;
+      shadowDark: string;
+      shadowLight: string;
     },
     fontFamily: {
       main: string;

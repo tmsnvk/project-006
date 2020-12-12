@@ -14,26 +14,38 @@ const ComponentContainer = styled.section`
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
-  margin: 0 auto;
-  background-color: ${({ theme }) => theme.color.backgroundPrimaryDark};
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.shadow};
-  padding: 1rem 1rem 1rem 1rem;
+  margin: 5rem auto 0;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;
-    width: 60%;
-    padding: 2rem 2rem 2rem 2rem;
+    width: 40%;
+  }
+`;
+
+const LinkContainer = styled.div`
+  margin: 2.5rem 1rem 2.5rem 1rem;
+
+  &:hover {
+    transform: scale(1.05);
   }
 `;
 
 const CategoryLinkTag = styled.a`
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: ${({ theme }) => theme.color.backgroundPrimaryDark};
   font-family: ${({ theme }) => theme.fontFamily.secondary};
   color: ${({ theme }) => theme.color.primaryDark};
   font-size: ${({ theme }) => theme.fontSize.small};
   letter-spacing: 0.2rem;
   font-weight: 700;
-  margin: 0 1rem 0 1rem;
-  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.shadowLight};
+  border-radius: 0.75rem;
+  transform: scale(1.05);
+
+  &:hover {
+    background-color: ${({ theme }) => theme.color.secondary};
+    box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.primaryDark};
+  }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     font-size: ${({ theme }) => theme.fontSize.medium};
@@ -43,12 +55,14 @@ const CategoryLinkTag = styled.a`
 const CategoryBox = () => {
   const renderData = siteData.home.categories.names.map(({ id, name, icon }) => {
     return (
-      <Link key={id} href={`/card/${name}`} passHref>
-        <CategoryLinkTag>
-          <StyledIcon icon={icon}></StyledIcon> 
-          {name}
-        </CategoryLinkTag>
-      </Link>
+      <LinkContainer key={id}>
+        <Link href={`/card/${name}/:id`} passHref>
+          <CategoryLinkTag>
+            <StyledIcon icon={icon}></StyledIcon> 
+            {name}
+          </CategoryLinkTag>
+        </Link>
+      </LinkContainer>
     );
   });
 
