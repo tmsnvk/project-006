@@ -1,15 +1,15 @@
 {
   "home": {
     "introtext": {
-      "title": "APP NAME",
+      "title": "SavvyJar",
       "paragraphs": [
         {
           "id": 1,
-          "content": "What am I for? What do I do?"
+          "content": "What do you do with a cookie jar? Naturally, you crack it open and snatch a piece of cookie."
         },
         {
           "id": 2,
-          "content": "Choose a category and receive a random pro tip."
+          "content": "The concept with SavvyJar is similar, although, the jar itself is imaginary or rather it's contained within the boundaries of this site. Instead of cracking it open, you choose a category, click on its button and receive your cookie - manifested as a piece of rationale or good wisdom that will hopefully make you stop and think for a second or two."
         }
       ]
     },
@@ -24,7 +24,7 @@
         { "id": 7, "name": "social", "icon": ["fas", "code-branch"] }
       ]
     },
-    "random": {
+    "randomButton": {
       "title": "Get me a random one!"
     }
   },

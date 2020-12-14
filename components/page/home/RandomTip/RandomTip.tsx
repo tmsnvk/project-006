@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { LinkTile } from "components/shared/tile";
-import siteData from "utilities/data/siteData.json";
+import siteData from "utilities/data/siteData/siteData.json";
 
 const ComponentContainer = styled.section`
   grid-column-start: 1;
@@ -19,7 +19,7 @@ const ComponentContainer = styled.section`
 const RandomTip = () => {
   return (
     <ComponentContainer>
-      <LinkTile data={siteData.home.random.title} url={"/random"} />
+      <LinkTile data={siteData.home.randomButton.title} url={"/random"} />
     </ComponentContainer>
   );
 };

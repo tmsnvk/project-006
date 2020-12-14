@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { StyledIcon } from "components/shared/utilities";
-import siteData from "utilities/data/siteData.json";
+import siteData from "utilities/data/siteData/siteData.json";
 
 const ComponentContainer = styled.section`
   grid-column-start: 1;
@@ -18,6 +18,10 @@ const ComponentContainer = styled.section`
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;
+    width: 80%;
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.xLarge}) {
     width: 40%;
   }
 `;
@@ -52,8 +56,20 @@ const CategoryLinkTag = styled.a`
   }
 `;
 
+type TData = {
+  id: number;
+  name: string;
+  icon: string[];
+}[]
+
 const CategoryBox = () => {
-  const renderData = siteData.home.categories.names.map(({ id, name, icon }) => {
+  const [randomList, setRandomList] = useState<TData | []>([]);
+
+  useEffect(() => {
+      setRandomList(siteData.home.categories.names.sort(() => Math.random() - 0.5));
+  }, []);
+
+  const renderData: TData = randomList.map(({ id, name, icon }) => {
     return (
       <LinkContainer key={id}>
         <Link href={`/card/${name}/:id`} passHref>

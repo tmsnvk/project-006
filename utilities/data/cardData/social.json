@@ -1,0 +1,38 @@
+[
+  {
+    "categoryId": "CID001",
+    "categoryName": "social",
+    "categoryContent": [
+      {
+        "cardId": "C0006SOC001",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0007SOC002",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0008SOC003",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0009SOC004",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0010SOC005",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      }
+    ]
+  }
+]

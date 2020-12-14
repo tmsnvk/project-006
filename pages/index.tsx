@@ -21,7 +21,7 @@ export const getServerSideProps = async (context: any) => {
   const isConnected = await client.isConnected();
 
   return {
-    props: { isConnected },
+    props: { isConnected }
   }
 };
 
@@ -30,6 +30,7 @@ type TComponent = {
 }
 
 const Index = ({ isConnected }: TComponent) => {
+
   return (
     <>
       <Head>

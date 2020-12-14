@@ -19,7 +19,7 @@ const ContentId = styled.h2`
 
 type TComponent = {
   category: string;
-  id: number;
+  id: string;
 }
 
 const Category = ({ category, id }: TComponent) => {

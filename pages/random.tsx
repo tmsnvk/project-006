@@ -18,10 +18,12 @@ const LayoutContainer = styled.main`
 `;
 
 type TData = {
-  category: string;
-  content: {
-    id: number;
-    content: string;
+  categoryName: string;
+  categoryContent: {
+    cardId: string;
+    paragraphOne: string;
+    paragraphTwo: string;
+    paragraphThree: string;
   }[];
 }
 
@@ -30,15 +32,15 @@ export const getServerSideProps = async () => {
     const { db } = await connectToDatabase();
 
     const getRandomNumber = (min: number, max: number) => Math.floor(Math.random() * (max - min) + min);
-    const categoryList = ["health", "social", "workplace"];
+    const categoryList = ["health", "social"];
 
-    const response: TData = await db.collection("data").findOne({ "category": categoryList[getRandomNumber(0, categoryList.length)] });
+    const response: TData = await db.collection("data").findOne({ "categoryName": categoryList[getRandomNumber(0, categoryList.length)] });
 
     return {
       props: {
         data: {
-          category: response.category,
-          content: response.content[getRandomNumber(0, response.content.length)]
+          category: response.categoryName,
+          content: response.categoryContent[getRandomNumber(0, response.categoryContent.length)]
         }
       }
     };
@@ -48,6 +50,8 @@ export const getServerSideProps = async () => {
 };
 
 const Random = ({ data }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+  console.log(data);
+  
   return (
     <>
       <Head>

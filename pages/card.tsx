@@ -4,42 +4,18 @@ import { StyledIcon } from "components/shared/utilities";
 import iconList from "utilities/iconList/iconList";
 
 export const getServerSideProps = async () => {
-  
-  const { db } = await connectToDatabase();
 
-  const data = await db
-    .collection("data")
-    .findOne()
-// console.log(data);
-
-  return {
-    props: {
-      data: JSON.parse(JSON.stringify(data)),
-    },
-  };
 }
 
 type TComponent = {
-  data: {
-    categories: {
-      health: {
-        id: number;
-        content: string;
-      }[];
-      hobbies: {
-        id: number;
-        content: string;
-      }[];
-    }
-  }
+
 }
 
-const Card = ({ data }: TComponent) => {
+const Card = ({}: TComponent) => {
 
   return (
     <div>
-      {/* aaa {data.categories.social[0].content}
-      <StyledIcon icon={iconList.linkedIn}></StyledIcon> */}
+      a
     </div>
   );
 };

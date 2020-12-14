@@ -28,8 +28,10 @@ type TComponent = {
   data: {
     category: string;
     content: {
-      id: number;
-      content: string;
+      cardId: string;
+      paragraphOne: string;
+      paragraphTwo: string;
+      paragraphThree: string;
     };
   };
 }
@@ -37,8 +39,8 @@ type TComponent = {
 const RandomCard = ({ data }: TComponent) => {
   return (
     <ComponentContainer>
-      <Category category={data.category} id={data.content.id} />
-      <Content content={data.content.content} />
+      <Category category={data.category} id={data.content.cardId} />
+      <Content content={data.content} />
     </ComponentContainer>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const ComponentContainer = styled.p`
+const ComponentContainer = styled.div`
   padding: 5rem 2.5rem 2rem 2.5rem;
   font-size: ${({ theme }) => theme.fontSize.small};
 
@@ -11,14 +11,31 @@ const ComponentContainer = styled.p`
   }
 `;
 
+const CardText = styled.p`
+
+`;
+
 type TComponent = {
-  content: string;
+  content: {
+    cardId: string;
+    paragraphOne: string;
+    paragraphTwo: string;
+    paragraphThree: string;
+  };
 }
 
 const Content = ({ content }: TComponent) => {
   return (
     <ComponentContainer>
-      {content}
+      <CardText>
+        {content.paragraphOne}
+      </CardText>
+      <CardText>
+        {content.paragraphTwo}
+      </CardText>
+      <CardText>
+        {content.paragraphThree}
+      </CardText>
     </ComponentContainer>
   );
 };

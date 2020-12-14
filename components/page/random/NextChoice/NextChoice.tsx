@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { LinkTile } from "components/shared/tile";
-import siteData from "utilities/data/siteData.json";
+import siteData from "utilities/data/siteData/siteData.json";
 
 const ComponentContainer = styled.section`
   grid-column-start: 1;

@@ -1,0 +1,38 @@
+[
+  {
+    "categoryId": "CID002",
+    "categoryName": "health",
+    "categoryContent": [
+      {
+        "cardId": "C0001HEA001",
+        "paragraphOne": "If someone begins unloading their thoughts about a stressful situation they are having, ask them to clarify if they are just venting or if they looking for advice.",
+        "paragraphTwo": "Sometimes people just need someone to listen and aren't necessarily ready to explore potentially difficult truths.",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0002HEA002",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0003HEA003",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0004HEA004",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      },
+      {
+        "cardId": "C0005HEA005",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": ""
+      }
+    ]
+  }
+]

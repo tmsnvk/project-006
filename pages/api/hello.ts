@@ -1,11 +1,3 @@
-import { connectToDatabase } from "../../utilities/mongodb/mongodb";
-
-export default async (require: any, response: any) => {
-  const { db } = await connectToDatabase();
-  
-  const hello = await db
-  .collection("data")
-  .findOne()
-
-  response.json({response: hello});
+export default async (request: any, response: any) => {
+  response.json({ message: "hello" })
 };
