@@ -22,17 +22,17 @@ type TComponent = {
   id: string;
 }
 
-const Category = ({ category, id }: TComponent) => {
+const CategoryHeader = ({ category, id }: TComponent) => {
   return (
     <ComponentContainer>
       <CategoryName>
         Category: {category}
       </CategoryName>
       <ContentId>
-        Card ID: {id}
+        CardID: {id}
       </ContentId>
     </ComponentContainer>
   );
 };
 
-export default Category;
+export default CategoryHeader;

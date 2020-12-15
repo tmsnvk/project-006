@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import styled from "styled-components";
 import { LinkTile } from "components/shared/tile";
 import siteData from "utilities/data/siteData/siteData.json";
@@ -16,7 +15,7 @@ const ComponentContainer = styled.section`
   }
 `;
 
-const RandomTip = () => {
+const RandomCard = () => {
   return (
     <ComponentContainer>
       <LinkTile data={siteData.home.randomButton.title} url={"/random"} />
@@ -24,4 +23,4 @@ const RandomTip = () => {
   );
 };
 
-export default RandomTip; 
+export default RandomCard;

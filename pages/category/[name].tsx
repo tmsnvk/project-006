@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
-import { NextChoice } from "components/page/random";
+import { NextChoice } from "components/page/category";
 import { CardTile } from "components/shared/tile";
 import { connectToDatabase } from "utilities/mongodb/mongodb";
 import getRandomNumber from "utilities/helpers/getRandomNumber";
@@ -18,6 +18,12 @@ const LayoutContainer = styled.main`
   }
 `;
 
+type TContext = {
+  query: {
+    name: string;
+  };
+}
+
 type TResponse = {
   categoryName: string;
   categoryContent: {
@@ -28,13 +34,11 @@ type TResponse = {
   }[];
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({ query }: TContext) => {
   try {
     const { db } = await connectToDatabase();
 
-    const categoryList = ["health", "social"];
-
-    const response: TResponse = await db.collection("data").findOne({ "categoryName": categoryList[getRandomNumber(0, categoryList.length)] });
+    const response: TResponse = await db.collection("data").findOne({ "categoryName": query.name });
     const responseContent = response.categoryContent[getRandomNumber(0, response.categoryContent.length)];
 
     return {
@@ -67,7 +71,7 @@ type TData = {
   };
 }
 
-const Random = ({ data }: TData) => {
+const Name = ({ data }: TData) => {
   return (
     <>
       <Head>
@@ -82,10 +86,4 @@ const Random = ({ data }: TData) => {
   );
 };
 
-export default Random;
-
-// { "id": 2, "name": "hobbies", "icon": ["fas", "code-branch"] },
-        // { "id": 3, "name": "pets", "icon": ["fas", "code-branch"] },
-        // { "id": 4, "name": "workplace", "icon": ["fas", "code-branch"] },
-        // { "id": 5, "name": "sports", "icon": ["fas", "code-branch"] },
-        // { "id": 6, "name": "technology", "icon": ["fas", "code-branch"] }
+export default Name;

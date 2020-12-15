@@ -5,27 +5,32 @@
       "paragraphs": [
         {
           "id": 1,
-          "content": "What do you do with a cookie jar? Naturally, you crack it open and snatch a piece of cookie."
+          "content": "What do you do with a cookie jar? Naturally, you crack it open and snatch a piece of cookie out of it."
         },
         {
           "id": 2,
-          "content": "The concept with SavvyJar is similar, although, the jar itself is imaginary or rather it's contained within the boundaries of this site. Instead of cracking it open, you choose a category, click on its button and receive your cookie - manifested as a piece of rationale or good wisdom that will hopefully make you stop and think for a second or two."
+          "content": "The concept with SavvyJar is similar."
+        },
+        {
+          "id": 3,
+          "content": "The jar is the site itself but instead of cracking it open, you choose a category for which you receive your cookie - manifested as a piece of rationale or good wisdom that will hopefully make you stop and think for a second or two."
         }
       ]
     },
     "categories": {
       "names": [
         { "id": 1, "name": "health", "icon": ["fas", "code-branch"] },
-        { "id": 2, "name": "hobbies", "icon": ["fas", "code-branch"] },
-        { "id": 3, "name": "pets", "icon": ["fas", "code-branch"] },
-        { "id": 4, "name": "workplace", "icon": ["fas", "code-branch"] },
-        { "id": 5, "name": "sports", "icon": ["fas", "code-branch"] },
-        { "id": 6, "name": "technology", "icon": ["fas", "code-branch"] },
-        { "id": 7, "name": "social", "icon": ["fas", "code-branch"] }
+        { "id": 2, "name": "social", "icon": ["fas", "code-branch"] }
       ]
     },
     "randomButton": {
       "title": "Get me a random one!"
+    }
+  },
+  "category": {
+    "choice": {
+      "anotherCategory": "Choose a different category!",
+      "sameCategory": "Another from the same category!"
     }
   },
   "random": {

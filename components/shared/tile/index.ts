@@ -1,3 +1,4 @@
+import CardTile from "./CardTile";
 import LinkTile from "./LinkTile";
 
-export { LinkTile };
+export { CardTile, LinkTile };

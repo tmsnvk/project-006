@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CardText from "./CardText";
 
 const ComponentContainer = styled.div`
   padding: 5rem 2.5rem 2rem 2.5rem;
@@ -11,33 +12,22 @@ const ComponentContainer = styled.div`
   }
 `;
 
-const CardText = styled.p`
-
-`;
-
 type TComponent = {
   content: {
-    cardId: string;
     paragraphOne: string;
     paragraphTwo: string;
     paragraphThree: string;
   };
 }
 
-const Content = ({ content }: TComponent) => {
+const ContentParagraph = ({ content }: TComponent) => {
   return (
     <ComponentContainer>
-      <CardText>
-        {content.paragraphOne}
-      </CardText>
-      <CardText>
-        {content.paragraphTwo}
-      </CardText>
-      <CardText>
-        {content.paragraphThree}
-      </CardText>
+      <CardText data={content.paragraphOne} />
+      <CardText data={content.paragraphTwo} />
+      <CardText data={content.paragraphThree} />
     </ComponentContainer>
   );
 };
 
-export default Content;
+export default ContentParagraph;

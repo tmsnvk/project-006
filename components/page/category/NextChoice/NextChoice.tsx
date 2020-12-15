@@ -4,10 +4,12 @@ import { LinkTile } from "components/shared/tile";
 import siteData from "utilities/data/siteData/siteData.json";
 
 const NextChoice = () => {
+  const name = window.location.href.substring(window.location.href.lastIndexOf("/") + 1);
+
   return (
     <ButtonsContainer>
-      <LinkTile data={siteData.random.choice.category} url={"/"} />
-      <LinkTile data={siteData.random.choice.random} url={"/random"} />
+      <LinkTile data={siteData.category.choice.anotherCategory} url={"/"} />
+      <LinkTile data={siteData.category.choice.sameCategory} url={`/category/${name}`} />
     </ButtonsContainer>
   );
 };

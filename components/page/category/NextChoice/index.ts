@@ -1,3 +1,3 @@
 import NextChoice from "./NextChoice";
 
-export { NextChoice };
+export default NextChoice;

@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
-import { CategoryBox, IntroText, RandomTip } from "components/page/home";
+import { CategoryBox, IntroText, RandomCard } from "components/page/home";
 import { connectToDatabase } from "utilities/mongodb/mongodb";
 
 const LayoutContainer = styled.main`
@@ -16,7 +16,7 @@ const LayoutContainer = styled.main`
   }
 `;
 
-export const getServerSideProps = async (context: any) => {
+export const getServerSideProps = async () => {
   const { client } = await connectToDatabase();
   const isConnected = await client.isConnected();
 
@@ -34,13 +34,13 @@ const Index = ({ isConnected }: TComponent) => {
   return (
     <>
       <Head>
-        <title>LPT</title>
+        <title>SavvyJar - Home Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutContainer>
         <IntroText />
         <CategoryBox />
-        <RandomTip />
+        <RandomCard />
       </LayoutContainer>
     </>
   );

@@ -1,5 +1,5 @@
 import CategoryBox from "./CategoryBox";
 import IntroText from "./IntroText";
-import RandomTip from "./RandomTip";
+import RandomCard from "./RandomCard";
 
-export { CategoryBox, IntroText, RandomTip };
+export { CategoryBox, IntroText, RandomCard };

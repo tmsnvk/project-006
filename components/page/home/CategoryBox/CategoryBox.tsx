@@ -66,13 +66,13 @@ const CategoryBox = () => {
   const [randomList, setRandomList] = useState<TData | []>([]);
 
   useEffect(() => {
-      setRandomList(siteData.home.categories.names.sort(() => Math.random() - 0.5));
+    setRandomList(siteData.home.categories.names.sort(() => Math.random() - 0.5));
   }, []);
 
   const renderData: TData = randomList.map(({ id, name, icon }) => {
     return (
       <LinkContainer key={id}>
-        <Link href={`/card/${name}/:id`} passHref>
+        <Link href={`/category/${name}`} passHref>
           <CategoryLinkTag>
             <StyledIcon icon={icon}></StyledIcon> 
             {name}
