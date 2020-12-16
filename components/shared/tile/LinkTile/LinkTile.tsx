@@ -13,9 +13,15 @@ const LinkTag = styled.a<TStyled>`
   font-size: ${({ theme }) => theme.fontSize.small};
   font-weight: 700;
   letter-spacing: 0.2rem;
+  text-align: center;
   padding: ${({ padding }) => padding === "small" ? "1.5rem 1.5rem 1.5rem 1.5rem" : "2rem 2rem 2rem 2rem"};
   box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
   border-radius: 0.75rem;
+  margin: 2rem 0 2rem 0;
+
+  &:first-of-type {
+    margin: 0 0 0 0;
+  }
 
   &:hover {
     background-color: ${({ theme }) => theme.color.blueDark};
@@ -24,7 +30,16 @@ const LinkTag = styled.a<TStyled>`
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-size: ${({ theme }) => theme.fontSize.large};
+    /* margin: 0 0 0 0; */
+  }
+
+  @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.large}) {
+    margin: 0 2rem 0 2rem;
+
+    &:first-of-type {
+      margin: 0 2rem 0 2rem;
+    }
   }
 `;
 

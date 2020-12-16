@@ -5,19 +5,17 @@ const ButtonsContainer = styled.section`
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  margin: 5rem auto 0;
+  margin: 5rem auto 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;
-    flex-direction: row;
-    width: 80%;
   }
 
-  @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.xLarge}) {
-    width: 40%;
+  @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.large}) {
+    flex-direction: row;
   }
 `;
 

@@ -11,6 +11,7 @@ const ComponentContainer = styled.div`
 const CategoryName = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.large};
   text-transform: uppercase;
+  padding: 0 0 0.5rem 0;
 `;
 
 const ContentId = styled.h2`

@@ -17,7 +17,7 @@ const CardTileContainer = styled.section`
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.xLarge}) {
-    width: 40%;
+    width: 50%;
   }
 `;
 

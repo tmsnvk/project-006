@@ -22,9 +22,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.color.grayDark};
     font-size: 62.5%;
     line-height: 1.5;
-    position: relative;
-    min-height: 100vh;
-    padding: 0 0 10rem 0;
   }
 
   a {

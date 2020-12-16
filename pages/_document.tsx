@@ -40,6 +40,15 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <style jsx global>
+            {`
+              #__next {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+              }
+            `}
+          </style>
         </body>
       </Html>
     );

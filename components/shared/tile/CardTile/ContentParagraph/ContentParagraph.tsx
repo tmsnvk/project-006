@@ -3,12 +3,10 @@ import styled from "styled-components";
 import CardText from "./CardText";
 
 const ComponentContainer = styled.div`
-  padding: 5rem 2.5rem 2rem 2.5rem;
-  font-size: ${({ theme }) => theme.fontSize.small};
+  padding: 2.5rem 1.5rem 2.5rem 1.5rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    padding: 5rem 5rem 2rem 5rem;
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    padding: 5rem 5rem 5rem 5rem;
   }
 `;
 

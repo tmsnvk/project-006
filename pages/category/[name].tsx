@@ -1,22 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import styled from "styled-components";
 import { NextChoice } from "components/page/category";
+import { LayoutContainer } from "components/shared/containers";
 import { CardTile } from "components/shared/tile";
 import { connectToDatabase } from "utilities/mongodb/mongodb";
 import getRandomNumber from "utilities/helpers/getRandomNumber";
-
-const LayoutContainer = styled.main`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  column-gap: 1em;
-  row-gap: 1rem;
-
-  @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    grid-template-columns: 1fr 1fr;
-  }
-`;
 
 type TContext = {
   query: {
@@ -75,7 +63,7 @@ const Name = ({ data }: TData) => {
   return (
     <>
       <Head>
-        <title>SavvyJar - {data.cardCategory} Category</title>
+        <title>SavvyJar - Category: {data.cardCategory}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutContainer>
