@@ -8,19 +8,19 @@ const ComponentContainer = styled.section`
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
-  margin: 5rem auto 0;
+  margin: 5rem auto 5rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;
   }
 `;
 
-const RandomCard = () => {
+const RandomLabel = () => {
   return (
     <ComponentContainer>
-      <LinkTile data={siteData.home.randomButton.title} url={"/random"} />
+      <LinkTile data={siteData.home.randomButton.title} padding={"big"} url={"/random"} />
     </ComponentContainer>
   );
 };
 
-export default RandomCard;
+export default RandomLabel;

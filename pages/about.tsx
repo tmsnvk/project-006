@@ -1,11 +1,19 @@
 import React from "react";
-import styled from "styled-components";
+import Head from "next/head";
+import { LayoutContainer } from "components/shared/containers";
+import { PageText } from "components/page/about";
 
 const About = () => {
   return (
-    <div>
-      about
-    </div>
+    <>
+      <Head>
+        <title>SavvyJar - About</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <LayoutContainer>
+        <PageText />
+      </LayoutContainer>
+    </>
   );
 };
 

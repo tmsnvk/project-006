@@ -1,6 +1,6 @@
 {
   "home": {
-    "introtext": {
+    "pagetext": {
       "title": "SavvyJar",
       "paragraphs": [
         {
@@ -25,6 +25,25 @@
     },
     "randomButton": {
       "title": "Get me a random one!"
+    }
+  },
+  "about": {
+    "pagetext": {
+      "title": "About",
+      "paragraphs": [
+        {
+          "id": 1,
+          "content": ""
+        },
+        {
+          "id": 2,
+          "content": ""
+        },
+        {
+          "id": 3,
+          "content": ""
+        }
+      ]
     }
   },
   "category": {

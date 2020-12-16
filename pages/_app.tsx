@@ -15,7 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <GlobalStyle />
       <Navbar />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   );
 };

@@ -1,5 +1,5 @@
-import CategoryBox from "./CategoryBox";
-import IntroText from "./IntroText";
-import RandomCard from "./RandomCard";
+import CategoryLabels from "./CategoryLabels";
+import PageText from "./PageText";
+import RandomLabel from "./RandomLabel";
 
-export { CategoryBox, IntroText, RandomCard };
+export { CategoryLabels, PageText, RandomLabel };
