@@ -1,18 +1,13 @@
 import { MongoClient } from "mongodb";
 
-if (!process.env.MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable inside .env.local.");
-}
+// if (!process.env.MONGODB_URI) {
+//   throw new Error("Please define the MONGODB_URI environment variable inside .env.local.");
+// }
 
-if (!process.env.MONGODB_DB) {
-  throw new Error("Please define the MONGODB_DB environment variable inside .env.local.");
-}
+// if (!process.env.MONGODB_DB) {
+//   throw new Error("Please define the MONGODB_DB environment variable inside .env.local.");
+// }
 
-/**
- * Global is used here to maintain a cached connection across hot reloads
- * in development. This prevents connections growing exponentiatlly
- * during API Route usage.
- */
 let cached = global.mongo;
 if (!cached) cached = global.mongo = {};
 
@@ -38,4 +33,4 @@ export async function connectToDatabase() {
 
   await cached.promise;
   return cached.conn;
-}
+};
