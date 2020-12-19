@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { LayoutContainer } from "components/shared/containers";
-import { PageText } from "components/page/about";
+import { ContactForm, PageText } from "components/page/about";
 
 const About = () => {
   return (
@@ -12,6 +12,7 @@ const About = () => {
       </Head>
       <LayoutContainer>
         <PageText />
+        <ContactForm />
       </LayoutContainer>
     </>
   );

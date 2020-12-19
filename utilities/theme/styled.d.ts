@@ -8,6 +8,7 @@ declare module "styled-components" {
       grayDark: string;
       grayLight: string;
       blueDark: string;
+      redDark: string;
     },
     fontFamily: {
       primary: string;

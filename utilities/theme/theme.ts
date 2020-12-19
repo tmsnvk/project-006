@@ -7,6 +7,7 @@ const theme: DefaultTheme = {
     grayDark: "#2d2d2d", // dark gray
     grayLight: "#ffd479", // light gray
     blueDark: "#6ab0f3", // dark blue
+    redDark: "#d90e00" // dark red
   },
   fontFamily: {
     primary: `"Roboto Mono", sans-serif`,

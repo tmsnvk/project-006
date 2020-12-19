@@ -1,3 +1,4 @@
+import LoadingSpinner from "./LoadingSpinner";
 import StyledIcon from "./StyledIcon";
 
-export { StyledIcon };
+export { LoadingSpinner, StyledIcon };
