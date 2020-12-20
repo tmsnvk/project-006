@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import styled from "styled-components";
@@ -15,17 +15,13 @@ const ComponentContainer = styled.div`
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;
-    width: 30rem;
+    width: 50rem;
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.xLarge}) {
-    width: 35rem;
+    width: 70rem;
   }
 `;
-
-type TComponent = {
-
-}
 
 type TData = {
   name: string;
@@ -48,7 +44,7 @@ const ContactForm = () => {
 
     const handleFormSubmission = async () => {
       try {
-        await axios.post("/contact/form-msg-from-evrallas", formData);
+        const response = await axios.post("/api/contactform", formData);
         // history.push("/page/success");
       } catch (error) {
         return setResponseError(error.response.data.message);
@@ -62,7 +58,7 @@ const ContactForm = () => {
     } 
   }, [formData]);
 
-  const getTextChanges = (event: any) => {
+  const getTextChanges = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setTextCharacterCounter(event.target.value.length);
     trigger("text");
   };

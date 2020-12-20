@@ -3,7 +3,7 @@ import Head from "next/head";
 import { NextChoice } from "components/page/random";
 import { LayoutContainer } from "components/shared/containers";
 import { CardTile } from "components/shared/tile";
-import { connectToDatabase } from "utilities/mongodb/mongodb";
+import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
 import getRandomNumber from "utilities/helpers/getRandomNumber";
 
 type TResponse = {

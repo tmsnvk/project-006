@@ -2,6 +2,15 @@ import React from "react";
 import Head from "next/head";
 import { LayoutContainer } from "components/shared/containers";
 import { ContactForm, PageText } from "components/page/about";
+import dbConnect from "../utilities/mongodb/utilities/mongoose";
+
+export const getServerSideProps = async () => {
+  await dbConnect();
+
+  return {
+    props: {}
+  };
+};
 
 const About = () => {
   return (

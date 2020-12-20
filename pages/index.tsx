@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import { LayoutContainer } from "components/shared/containers";
 import { CategoryLabels, PageText, RandomLabel } from "components/page/home";
-import { connectToDatabase } from "utilities/mongodb/mongodb";
+import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
 
 export const getServerSideProps = async () => {
   const { client } = await connectToDatabase();

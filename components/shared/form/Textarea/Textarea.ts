@@ -33,11 +33,11 @@ const Textarea = styled.textarea`
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    width: 30rem;
+    width: 50rem;
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.xLarge}) {
-    width: 35rem;
+    width: 70rem;
   }
 `;
 
