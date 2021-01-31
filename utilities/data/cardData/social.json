@@ -1,38 +1,262 @@
 [
   {
-    "categoryId": "CID001",
-    "categoryName": "social",
+    "categoryId": "CID009",
+    "categoryName": "Social",
     "categoryContent": [
       {
-        "cardId": "C0006SOC001",
-        "paragraphOne": "",
+        "cardId": "C0007SOC001",
+        "paragraphOne": "When a friend is upset, ask them one simple question before saying anything else: 'Do you want to talk about it or do you want to be distracted from it?'",
         "paragraphTwo": "",
-        "paragraphThree": ""
+        "paragraphThree": "",
+        "savvied": 0
       },
       {
-        "cardId": "C0007SOC002",
-        "paragraphOne": "",
+        "cardId": "C0009SOC002",
+        "paragraphOne": "In college it is much better to be friends with the people who have the party house than it is to live at the party house.",
         "paragraphTwo": "",
-        "paragraphThree": ""
+        "paragraphThree": "",
+        "savvied": 0
       },
       {
-        "cardId": "C0008SOC003",
-        "paragraphOne": "",
-        "paragraphTwo": "",
-        "paragraphThree": ""
+        "cardId": "C0012SOC003",
+        "paragraphOne": "Showing up where you are supposed to be, when you are supposed to be there and not stealing things is about 80% of life.",
+        "paragraphTwo": "The other 20% is 'Don't be a dick.'",
+        "paragraphThree": "",
+        "savvied": 0
       },
       {
-        "cardId": "C0009SOC004",
-        "paragraphOne": "",
-        "paragraphTwo": "",
-        "paragraphThree": ""
+        "cardId": "C0019SOC004",
+        "paragraphOne": "When someone gets interrupted while telling a story, invite them to continue after the interruption is over with an, 'as you were saying about (x)' or something similar.",
+        "paragraphTwo": "It can be uncomfortable for the person to start back up and this makes them feel like you valued their words.",
+        "paragraphThree": "",
+        "savvied": 0
       },
       {
-        "cardId": "C0010SOC005",
-        "paragraphOne": "",
+        "cardId": "C0020SOC005",
+        "paragraphOne": "Ask yourself 'What does it matter to me?' the next time you find yourself judging someone for their clothing, interests or hobbies.",
+        "paragraphTwo": "The more you train yourself to not care about the personal preferences of other people, the more relaxed and nicer you become as a person.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0021SOC006",
+        "paragraphOne": "It is important to know when to stop arguing with people, and simply let them be wrong.",
         "paragraphTwo": "",
-        "paragraphThree": ""
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0028SOC007",
+        "paragraphOne": "If your roommate ever cooks a meal and lets you eat it with them, do all of the dishes unprompted.",
+        "paragraphTwo": "It's polite, shows respect for the work your roommate put into it, saves them the hassle, and makes them far more likely to do so again in the future.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0030SOC008",
+        "paragraphOne": "When someone asks you what you want to do, if you don't care then say 'Doesn't matter to me, I'm just here to hang out with you.' instead of 'I don't care.'.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0034SOC009",
+        "paragraphOne": "If you are a very talkative person, get in the habit of questioning what you gain by sharing information with the people you talk to.",
+        "paragraphTwo": "Sometimes knowing when not to talk is just as important as knowing what to say.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0036SOC010",
+        "paragraphOne": "Don’t wait around for others.",
+        "paragraphTwo": "Make your own plans and stick to them.",
+        "paragraphThree": "Don’t be the person who never gets out just because nobody else can go with you.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0041SOC011",
+        "paragraphOne": "If you offer someone an alcoholic drink and they say no, immediately tell them what non-alcoholic drinks you have.",
+        "paragraphTwo": "With no judgment.",
+        "paragraphThree": "They don't owe you any explanation of recovery, medical contraindications, or whether or not they just don't feel like it that day.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0044SOC012",
+        "paragraphOne": "Anytime you feel bad about not reaching out to a friend in a long time, just remember that they also haven't reached out in an equal amount of time.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0045SOC013",
+        "paragraphOne": "If you can smell yourself a little bit, others can smell you a lot.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0047SOC014",
+        "paragraphOne": "If you offer someone a vice of some kind (alcohol, cookies, etc.) over the holidays and they say no, drop it.",
+        "paragraphTwo": "The holiday season is the most difficult time of year for addicts.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0049SOC015",
+        "paragraphOne": "If your friend or co-worker tells you they got a new job, ask them the start date and put it in your calendar, so you can text them a good luck / happy first day message.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0054SOC016",
+        "paragraphOne": "When someone shares something about themselves, don't interrupt with a relatable story about yourself.",
+        "paragraphTwo": "Just listen.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0057SOC017",
+        "paragraphOne": "Think twice before buying someone a gift associated with their hobby.",
+        "paragraphTwo": "Unless you are just as knowledgeable, you will likely buy something they don't want or need.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0069SOC018",
+        "paragraphOne": "If you're doing a secret Santa with a 20 euro spending limit, instead of buying cheap trinkets, spend the money on a high quality version of a useful item that would typically cost far less (for example a pen, bag of coffee, kitchen utensil, etc.).",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0073SOC019",
+        "paragraphOne": "Let someone know you're picking up the tab for a meal after they've ordered.",
+        "paragraphTwo": "This allows a considerate friend to order what they want freely and also prevents a colleague / acquaintance from taking advantage of your generosity.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0074SOC020",
+        "paragraphOne": "If you are in a bad mood, try to calm down before you interact with others.",
+        "paragraphTwo": "It’s not fair to yell at others because you are the one that’s stressed and overwhelmed.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0077SOC021",
+        "paragraphOne": "If a friend makes a recommendation, at least check it out.",
+        "paragraphTwo": "Worst case scenario is it will give you the opportunity to grow closer to them and maybe even understand them a little better.",
+        "paragraphThree": "When you ignore recommendations it communicates a lack of investment in the relationship.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0080SOC022",
+        "paragraphOne": "Either they like you or they don't.",
+        "paragraphTwo": "Never try to convince somebody of your worth. If a person doesn't appreciate you, they don't deserve you.",
+        "paragraphThree": "Respect yourself and be with people who truly value you.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0081SOC023",
+        "paragraphOne": "Always bring your own vehicle to family/friend gatherings so you can leave when you want to.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0082SOC024",
+        "paragraphOne": "If someone doesn't appreciate something you do for them, it probably means that it isn't that important to them.",
+        "paragraphTwo": "Rather than stew about it or demand recognition, just add it to the list of things you don't need to do anymore.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0083SOC025",
+        "paragraphOne": "Don’t be afraid to lose people.",
+        "paragraphTwo": "Be afraid of losing yourself by trying to please everyone around you.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0098SOC026",
+        "paragraphOne": "If you constantly vent your problems to someone, make sure to also call them when things are going well.",
+        "paragraphTwo": "Good listeners can sometimes get overwhelmed, and it's nice to hear positive news.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0100SOC027",
+        "paragraphOne": "If a friend ever asks you how you’re doing, always ask them back.",
+        "paragraphTwo": "They may actually want to talk about how they’re doing but are unsure about how to start that conversation.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0113SOC028",
+        "paragraphOne": "If someone has poor mental health, whether it’s depression/anxiety, bi-polar disorder or OCD, and is treating you badly, you are 100% allowed to defend yourself and call them out.",
+        "paragraphTwo": "If they refuse to seek help, it is not your job to convince them, walk away and save yourself the headache.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0116SOC029",
+        "paragraphOne": "Getting angry with people for making mistakes doesn't teach them not to make mistakes.",
+        "paragraphTwo": "It just teaches them to hide them.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0119SOC030",
+        "paragraphOne": "When you arrive late for an important event no one wants to hear why in that moment, just apologize, do not give your excuse, no matter how 'good' it is.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0133SOC031",
+        "paragraphOne": "If someone tells you about an event in their life coming up, add it to your calendar, so you can follow up with them after no matter how big or small it is.",
+        "paragraphTwo": "Makes you a better friend.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0136SOC032",
+        "paragraphOne": "If you want to offer a deep and memorable compliment, ask someone how they did something.",
+        "paragraphTwo": "It gives them the opportunity to tell their story, and shows your genuine interest.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0137SOC033",
+        "paragraphOne": "If someone gifts you something great, take a photo of yourself using/enjoying it and send it to them. Sometimes that speaks louder than simply saying 'thanks'.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0139SOC034",
+        "paragraphOne": "Don’t say anything negative about someone’s appearance that they cannot change or fix in 30 seconds.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0140SOC035",
+        "paragraphOne": "Monologueing kills your social life.",
+        "paragraphTwo": "Don't volunteer details about your life when no one asked. Arouse interest, then share when they ask!",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0145SOC036",
+        "paragraphOne": "If you’re listening to someone in the middle of a conversation and it gets interrupted, one of the best things you can do is to ask them to finish what they were saying.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
       }
     ]
   }
 ]
+
+last one added

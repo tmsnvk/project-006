@@ -33,17 +33,17 @@ const LinkContainer = styled.div`
   }
 `;
 
-type TComponent = {
+type TRender = {
   icon: string[];
   id: number;
   name: string;
 }
 
 const CategoryLabels = () => {
-  const renderData = siteData.home.categories.names.map(({ icon, id, name }: TComponent) => {
+  const renderData = siteData.home.categories.names.map(({ icon, id, name }: TRender) => {
     return (
       <LinkContainer key={id}>
-        <LinkTile data={name} icon={icon} padding={"small"} url={`/category/${name}`} />
+        <LinkTile data={name} icon={icon} padding={"1.5rem 1.5rem 1.5rem 1.5rem"} url={`/category/${name}`} />
       </LinkContainer>
     );
   });

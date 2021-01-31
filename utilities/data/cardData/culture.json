@@ -1,0 +1,43 @@
+[
+  {
+    "categoryId": "CID006",
+    "categoryName": "Culture",
+    "categoryContent": [
+      {
+        "cardId": "C0008CUL001",
+        "paragraphOne": "If you like one song by an artist, but don't dig the rest of their stuff find out who the producer is and see what other work they've done.",
+        "paragraphTwo": "The producer can play a big role in how the final song turns out.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0040CUL002",
+        "paragraphOne": "Telling someone that a movie / book has a great twist is, in itself, a major spoiler. Don’t do that.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0003HEA003",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0004HEA004",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0005HEA005",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "categoryId": "CID011",
+    "categoryName": "Nature",
+    "categoryContent": [
+      {
+        "cardId": "C0033NAT001",
+        "paragraphOne": "If a bee colony has set up a hive that you need removed, don't call the exterminator.",
+        "paragraphTwo": "Beekeepers will relocate the hive often for free. This is an easy way to be nice to the bees and to your wallet.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0017PER002",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0003HEA003",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0004HEA004",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0005HEA005",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]

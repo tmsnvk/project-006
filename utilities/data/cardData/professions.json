@@ -1,0 +1,43 @@
+[
+  {
+    "categoryId": "CID012",
+    "categoryName": "Professions",
+    "categoryContent": [
+      {
+        "cardId": "C0035PRO001",
+        "paragraphOne": "Librarians aren't just random people who work at libraries.",
+        "paragraphTwo": "They are professional researchers there to help you find a place to start researching on any topic.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0017PER002",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0003HEA003",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0004HEA004",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0005HEA005",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]

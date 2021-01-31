@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { CardContext } from "context/CardContext";
 import CardText from "./CardText";
+import Savvied from "./Savvied";
 
 const ComponentContainer = styled.div`
   padding: 2.5rem 1.5rem 2.5rem 1.5rem;
@@ -10,20 +12,15 @@ const ComponentContainer = styled.div`
   }
 `;
 
-type TComponent = {
-  content: {
-    paragraphOne: string;
-    paragraphTwo: string;
-    paragraphThree: string;
-  };
-}
+const ContentParagraph = () => {
+  const { cardData } = useContext(CardContext);
 
-const ContentParagraph = ({ content }: TComponent) => {
   return (
     <ComponentContainer>
-      <CardText data={content.paragraphOne} />
-      <CardText data={content.paragraphTwo} />
-      <CardText data={content.paragraphThree} />
+      <CardText data={cardData.cardContent.paragraphOne} />
+      <CardText data={cardData.cardContent.paragraphTwo} />
+      <CardText data={cardData.cardContent.paragraphThree} />
+      <Savvied data={cardData.savvied} />
     </ComponentContainer>
   );
 };

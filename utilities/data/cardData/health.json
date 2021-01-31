@@ -1,38 +1,51 @@
 [
   {
-    "categoryId": "CID002",
-    "categoryName": "health",
+    "categoryId": "CID010",
+    "categoryName": "Health",
     "categoryContent": [
       {
-        "cardId": "C0001HEA001",
-        "paragraphOne": "If someone begins unloading their thoughts about a stressful situation they are having, ask them to clarify if they are just venting or if they looking for advice.",
-        "paragraphTwo": "Sometimes people just need someone to listen and aren't necessarily ready to explore potentially difficult truths.",
-        "paragraphThree": ""
+        "cardId": "C0022HEA001",
+        "paragraphOne": "Wear a helmet. Many kids and adults think they’re stupid. Be really smart and look stupid in helmets. Brain damage is no joke.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
       },
       {
-        "cardId": "C0002HEA002",
-        "paragraphOne": "",
-        "paragraphTwo": "",
-        "paragraphThree": ""
+        "cardId": "C0027HEA002",
+        "paragraphOne": "If a loved one is taken in an ambulance, do not follow them to the hospital.",
+        "paragraphTwo": "Go there on your own time and own route.",
+        "paragraphThree": "A good use of this time is to pack an overnight bag and to collect any valid medical information.",
+        "savvied": 0
       },
       {
-        "cardId": "C0003HEA003",
-        "paragraphOne": "",
-        "paragraphTwo": "",
-        "paragraphThree": ""
+        "cardId": "C0029HEA003",
+        "paragraphOne": "If you have illegal drugs in your system and find yourself in the hospital please be honest and disclose exactly what you've taken or what you believe you've taken.",
+        "paragraphTwo": "Care providers are not the police and the quality of your outcome might depend on such information.",
+        "paragraphThree": "",
+        "savvied": 0
       },
       {
-        "cardId": "C0004HEA004",
-        "paragraphOne": "",
-        "paragraphTwo": "",
-        "paragraphThree": ""
+        "cardId": "C0071HEA004",
+        "paragraphOne": "Be skeptical of products that say 'clinically proven'.",
+        "paragraphTwo": "That is a marketing term and only says they've done their own private study that is designed to show the result the company wants.",
+        "paragraphThree": "It is not the same as a 'scientifically proven' study which is published and open for peer review.",
+        "savvied": 0
       },
       {
-        "cardId": "C0005HEA005",
-        "paragraphOne": "",
+        "cardId": "C0114HEA005",
+        "paragraphOne": "Buy yourself a good pillow.",
+        "paragraphTwo": "You use it every night and the difference between a good pillow and a stack of cheap ones is almost immediately noticeable.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0115HEA006",
+        "paragraphOne": "If you are hiking / running / walking with someone in a worse shape than you, let them lead the way.",
         "paragraphTwo": "",
-        "paragraphThree": ""
+        "paragraphThree": "",
+        "savvied": 0
       }
     ]
   }
 ]
+

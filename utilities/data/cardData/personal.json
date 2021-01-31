@@ -1,0 +1,86 @@
+[
+  {
+    "categoryId": "CID004",
+    "categoryName": "Personal",
+    "categoryContent": [
+      {
+        "cardId": "C0004PER001",
+        "paragraphOne": "Just because you did something wrong in the past, doesn’t mean you can’t advocate against it now.",
+        "paragraphTwo": "It doesn’t make you a hypocrite. You grew. Don’t let people use your past to invalidate your current mindset.",
+        "paragraphThree": "Growth is a concept. Embrace it.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0064PER002",
+        "paragraphOne": "Learn to do - and enjoy - things by yourself.",
+        "paragraphTwo": "You're going to miss out on a lot of fun if you keep waiting for someone else to accompany you.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0070PER003",
+        "paragraphOne": "If you catch yourself thinking about the past remember - It’s okay to look back, just don’t stare.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0076PER004",
+        "paragraphOne": "If you are in your 20s, study personal finance like your life depended on it.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0087PER005",
+        "paragraphOne": "Don't compare your current life /financial /career situations to others.",
+        "paragraphTwo": "Compare it to your past self, and evaluate how the personal decisions you've made have impacted your circumstances.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0092PER006",
+        "paragraphOne": "Almost everyone who is 'good with money' shares a common trait: they make a detailed budget for the next month and stick to it.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0096PER007",
+        "paragraphOne": "Your life doesn’t need to be special to be enjoyable.",
+        "paragraphTwo": "Having a regular job, food to eat and a roof over your head is more than almost every person who came before you or living now has had / have.",
+        "paragraphThree": "Stop comparing yourself to crazy talented lucky people.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0104PER008",
+        "paragraphOne": "Confirmation bias is real for everyone.",
+        "paragraphTwo": "Be aware of your own bias and seek your news from more neutral sources.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0110PER009",
+        "paragraphOne": "Treat your ears nicely.",
+        "paragraphTwo": "Ears don't repair themselves and earplugs to concerts are better than tinnitus for the rest of your life.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0129PER010",
+        "paragraphOne": "After any unpleasant event in your life you should always stop to ask:",
+        "paragraphTwo": "Did this happen to me or did I create it?",
+        "paragraphThree": "It will help you either let go of guilt or take responsibility and grow as a person.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0138PER011",
+        "paragraphOne": "When starting a new change in your life such as going to the gym or quitting smoking, avoid telling friends or family.",
+        "paragraphTwo": "Their positive feedback can give you a false feeling of accomplishment tricking you into thinking you have already succeeded which can hinder your efforts to change.",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]
+ 

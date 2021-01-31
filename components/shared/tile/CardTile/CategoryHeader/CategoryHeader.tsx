@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import { CardContext } from "context/CardContext";
 
 const ComponentContainer = styled.div`
   display: flex;
@@ -18,19 +19,16 @@ const ContentId = styled.h2`
   font-size: ${({ theme }) => theme.fontSize.default};
 `;
 
-type TComponent = {
-  category: string;
-  id: string;
-}
+const CategoryHeader = () => {
+  const { cardData } = useContext(CardContext);
 
-const CategoryHeader = ({ category, id }: TComponent) => {
   return (
     <ComponentContainer>
       <CategoryName>
-        Category: {category}
+        Category: {cardData.cardCategory}
       </CategoryName>
       <ContentId>
-        CardID: {id}
+        CardID: {cardData.cardId}
       </ContentId>
     </ComponentContainer>
   );

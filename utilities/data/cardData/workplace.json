@@ -1,0 +1,214 @@
+[
+  {
+    "categoryId": "CID001",
+    "categoryName": "Workplace",
+    "categoryContent": [
+      {
+        "cardId": "C0001WOR001",
+        "paragraphOne": "Keep your mouth shut, and don't volunteer information.",
+        "paragraphTwo": "Make a simple, concise statement and then stop talking.",
+        "paragraphThree": "The more you say, the more you’re responsible for.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0014WOR002",
+        "paragraphOne": "No matter how much your workplace pushes 'team building' and 'family culture'.",
+        "paragraphTwo": "Remember, they're not your friends and it's still a workplace.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0015WOR003",
+        "paragraphOne": "For people starting a new job.",
+        "paragraphTwo": "If a task typically takes someone ~3.5 hours and you can get it done in 1 hour, don't turn your task in right away - wait about an hour.",
+        "paragraphThree": "If your manager(s) discover how productive you really are, they will quickly overwork you without proper compensation.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0016WOR004",
+        "paragraphOne": "Always be prepared to leave your employer because they are prepared to leave you.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0023WOR005",
+        "paragraphOne": "Know you're about to get fired? Don't throw your resignation in first in one last show of defiance.",
+        "paragraphTwo": "The meeting where they let you go is your chance to extract a great severance package and positive references.",
+        "paragraphThree": "Employers want a clean departure - don't make their life easy.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0024WOR006",
+        "paragraphOne": "Put a mirror behind you at the counter or at your desk.",
+        "paragraphTwo": "This way angry customers who approach you will have to see themselves in the mirror behind you and the chances of them behaving irrationally lowers significantly.",
+        "paragraphThree": "No one wants to see themselves act like a dickhead.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0025WOR007",
+        "paragraphOne": "Be careful who you vent to at work.",
+        "paragraphTwo": "Just because they listen, it doesn't mean that they're your friend or have your best interests at heart.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0042WOR008",
+        "paragraphOne": "Keep a separate master resume with all previous work experience.",
+        "paragraphTwo": "When sending out a resume for application, duplicate the file and remove anything that may be irrelevant to the position.",
+        "paragraphThree": "You never know when some past experience might become relevant again, and you don’t want to forget about it.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0046WOR009",
+        "paragraphOne": "Take that break.",
+        "paragraphTwo": "Working around the clock isn't a badge of honor. You're going to burn yourself out.",
+        "paragraphThree": "You may think you're too busy and you don't have the time for a break, but even 10 minutes makes a big difference. You need to take care of yourself and that includes taking a break.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0048WOR010",
+        "paragraphOne": "If there is anyone at your job you don’t like, always take special care not to take vacation at the same time as them.",
+        "paragraphTwo": "Having toxic / stressful people gone from the office is like a mini vacation by itself that you would miss out on if you are gone.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0050WOR011",
+        "paragraphOne": "When starting a new job, find out how long your coworkers have been there.",
+        "paragraphTwo": "If no one has been working there for very long, and it's not a new company, that may be a red flag.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0051WOR012",
+        "paragraphOne": "As a manager, give praise in public and discipline in private.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0055WOR013",
+        "paragraphOne": "Always stay muted unless you're currently speaking.",
+        "paragraphTwo": "No one needs to hear the background noises of every meeting participant.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0059WOR014",
+        "paragraphOne": "Employers put 'entry level' in job titles to trick applicants into accepting less pay.",
+        "paragraphTwo": "If the 'entry level' job requires you to have significant experience, demand more than starting pay.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0061WOR015",
+        "paragraphOne": "If you need to wait until your boss is in a good mood to ask for something as simple as time off, you're in a toxic work environment and you need to take steps to exit sooner rather than later.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0067WOR016",
+        "paragraphOne": "During a job interview, if offered a glass of water, accept it.",
+        "paragraphTwo": "That way when you get asked a difficult question you can take a sip for some extra seconds before answering.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0075WOR017",
+        "paragraphOne": "Save your resume as a PDF before sending it out.",
+        "paragraphTwo": "This guarantees the layout, structure, typography to be 100% consistent for all viewers, and no one will have issues opening it.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0088WOR018",
+        "paragraphOne": "If you make a mistake, admit to the mistake, apologize, and explain what steps you'll take to prevent it from happening again in the future.",
+        "paragraphTwo": "It's very hard for people to yell at you if you've done that.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0093WOR019",
+        "paragraphOne": "Remember, at a job interview, you're also interviewing the company.",
+        "paragraphTwo": "Ask more questions, don’t settle so quickly because it might not be for you after all.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0099WOR020",
+        "paragraphOne": "Be careful not to let your guard down in conversations with figures of authority when the conversation is informal, friendly, and non-accusatory.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0101WOR021",
+        "paragraphOne": "Be loyal to yourself!",
+        "paragraphTwo": "Be loyal to your own mental, spiritual, financial and physical wellbeing.",
+        "paragraphThree": "If that stops aligning with your current workplace, it’s time to try and move on.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0102WOR022",
+        "paragraphOne": "Don't have blind loyalty to a corporation you work for.",
+        "paragraphTwo": "There is nothing wrong with loving your job or the work you do, but understand that corporations don't reward loyalty.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0104WOR023",
+        "paragraphOne": "When your company sends you an 'anonymous' survey, always assume it's not.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0106WOR024",
+        "paragraphOne": "If an employer says you have to treat an entry level job as more than just a job to be successful, that's key for you'll be overworked and underpaid.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0107WOR025",
+        "paragraphOne": "50% of a job is just being friendly to the right people.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0111WOR026",
+        "paragraphOne": "If you’re working in a technical role (IT, engineering, etc.), write everything you do down as if it was a user manual.",
+        "paragraphTwo": "Ignore those who say it will be used to replace you.",
+        "paragraphThree": "It is far more likely to be used to show management 'you can give me that promotion, as the next guy is all set'.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0121WOR027",
+        "paragraphOne": "If a supervisor ever asks you to do something that you know violates policy or is morally questionable/shady, ask them to send you the request in an e-mail / written form.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0127WOR028",
+        "paragraphOne": "If you get a nice compliment for doing a good job at work via email, file it away into a separate 'compliments' folder.",
+        "paragraphTwo": "Next performance review you can easily pull up a whole list of items.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0143WOR029",
+        "paragraphOne": "The one skill to learn, develop, and nurture to be successful is negotiation - the ability to reach an agreement, a common ground.",
+        "paragraphTwo": "Work, social situations, personal life, the skill will serve you everywhere and not get pushed around.",
+        "paragraphThree": "You get what you negotiate, not always what you deserve.",
+        "savvied": 0
+      }
+    ]
+  }
+]
+
+
+  

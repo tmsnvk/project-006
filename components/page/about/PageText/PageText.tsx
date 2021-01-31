@@ -1,6 +1,6 @@
 import React from "react";
 import { PageTextContainer } from "components/shared/containers";
-import { PageMessage, PageTitle } from "components/shared/general";
+import { PageMessage, PageTitle } from "components/shared/text";
 import siteData from "utilities/data/siteData/siteData.json";
 
 const PageText = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { MessageText } from "components/shared/general";
+import { MessageText } from "components/shared/text";
 // import { IconLight } from "components/shared/styled-icons";
 import { iconList } from "utilities";
 

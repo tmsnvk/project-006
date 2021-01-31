@@ -20,9 +20,9 @@ export const getServerSideProps = async () => {
   try {
     const { db } = await connectToDatabase();
 
-    const categoryList = ["health", "social"];
+    const categoryList = ["workplace", "it"];
 
-    const response: TResponse = await db.collection("data").findOne({ "categoryName": categoryList[getRandomNumber(0, categoryList.length)] });
+    const response: TResponse = await db.collection("categorydata").findOne({ "categoryName": categoryList[getRandomNumber(0, categoryList.length)] });
     const responseContent = response.categoryContent[getRandomNumber(0, response.categoryContent.length)];
 
     return {

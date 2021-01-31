@@ -1,0 +1,52 @@
+[
+  {
+    "categoryId": "CID013",
+    "categoryName": "Pets",
+    "categoryContent": [
+      {
+        "cardId": "C0036PET001",
+        "paragraphOne": "Always check with an owner before you pet a dog.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0037PET002",
+        "paragraphOne": "Dogs have a lot of nerves in their ears so when you rub them behind their ears it releases endorphins and makes them very relaxed on a natural high.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0052PET003",
+        "paragraphOne": "If a service dog without a person approaches you, it means that the person is in need of help.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0086PET004",
+        "paragraphOne": "Adopt an adult dog from a shelter if you want a companion but don't have time / patience to train a puppy.",
+        "paragraphTwo": "They are already potty trained in most cases and love you all the same.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0091PET005",
+        "paragraphOne": "If you get a kitten, do use your hands for play so you can teach restraint when they are too rough.",
+        "paragraphTwo": "Restraint is naturally learned in play with hands and littermates because the fun stops when a bite or scratch is too much.",
+        "paragraphThree": "Adult cats who didn't play this way are more likely to scratch or bite.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0131PET006",
+        "paragraphOne": "If you're taking your animal to the vet for an ailment, get video of them coughing, breathing strangely, limping, etc.",
+        "paragraphTwo": "Animals may not show the ailment at the vet's office and the video can help the vet diagnose your furry friend.",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]
+
+ 

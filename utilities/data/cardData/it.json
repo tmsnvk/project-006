@@ -1,0 +1,36 @@
+[
+  {
+    "categoryId": "CID018",
+    "categoryName": "IT",
+    "categoryContent": [
+      {
+        "cardId": "C0117IT001",
+        "paragraphOne": "If you accidentally press the 'spacebar' and scroll down the page, you can press 'shift + space' and go back to where you were.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0123IT002",
+        "paragraphOne": "'Ctrl + backspace' deletes word by word, rather than letter by letter.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0124IT003",
+        "paragraphOne": "'Ctrl + arrow keys' moves the cursor one word at a time.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0125IT004",
+        "paragraphOne": "'Ctrl + shift + arrow keys' highlights one word at a time.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]

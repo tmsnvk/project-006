@@ -1,0 +1,15 @@
+[
+  {
+    "categoryId": "CID016",
+    "categoryName": "Scams",
+    "categoryContent": [
+      {
+        "cardId": "C0103SCA001",
+        "paragraphOne": "Never trust a call from your bank.",
+        "paragraphTwo": "Hang up and call them back at a number you know belongs to your bank.",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]

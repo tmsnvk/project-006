@@ -19,12 +19,29 @@
     },
     "categories": {
       "names": [
-        { "id": 1, "name": "health", "icon": ["fas", "code-branch"] },
-        { "id": 2, "name": "social", "icon": ["fas", "code-branch"] }
+        { "id": 1, "name": "workplace", "icon": ["fas", "code-branch"] },
+        { "id": 2, "name": "family", "icon": ["fas", "code-branch"] },
+        { "id": 3, "name": "internet", "icon": ["fas", "code-branch"] },
+        { "id": 4, "name": "personality", "icon": ["fas", "code-branch"] },
+        { "id": 5, "name": "relationships", "icon": ["fas", "code-branch"] },
+        { "id": 6, "name": "culture", "icon": ["fas", "code-branch"] },
+        { "id": 7, "name": "home", "icon": ["fas", "code-branch"] },
+        { "id": 8, "name": "school", "icon": ["fas", "code-branch"] },
+        { "id": 9, "name": "social", "icon": ["fas", "code-branch"] },
+        { "id": 10, "name": "health", "icon": ["fas", "code-branch"] },
+        { "id": 11, "name": "nature", "icon": ["fas", "code-branch"] },
+        { "id": 12, "name": "professions", "icon": ["fas", "code-branch"] },
+        { "id": 13, "name": "pets", "icon": ["fas", "code-branch"] },
+        { "id": 14, "name": "productivity", "icon": ["fas", "code-branch"] },
+        { "id": 15, "name": "travelling", "icon": ["fas", "code-branch"] },
+        { "id": 16, "name": "scams", "icon": ["fas", "code-branch"] },
+        { "id": 17, "name": "games", "icon": ["fas", "code-branch"] },
+        { "id": 18, "name": "it", "icon": ["fas", "code-branch"] }
       ]
     },
-    "randomButton": {
-      "title": "Get me a random one!"
+    "randomTile": {
+      "title": "Get me a random one!",
+      "icon": ["fas", "random"]
     }
   },
   "about": {

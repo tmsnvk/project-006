@@ -3,18 +3,18 @@ import Link from "next/link";
 import styled from "styled-components";
 import { StyledIcon } from "components/shared/utilities";
 
-type TStyled = {
+type TStyledLinkTag = {
   padding?: string;
 }
 
-const LinkTag = styled.a<TStyled>`
+const LinkTag = styled.a<TStyledLinkTag>`
   background-color: ${({ theme }) => theme.color.yellowDark};
   font-family: ${({ theme }) => theme.fontFamily.secondary};
   font-size: ${({ theme }) => theme.fontSize.small};
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-align: center;
-  padding: ${({ padding }) => padding === "small" ? "1.5rem 1.5rem 1.5rem 1.5rem" : "2rem 2rem 2rem 2rem"};
+  padding: ${({ padding }) => padding ? padding : "0 0 0 0"};
   box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
   border-radius: 0.75rem;
   margin: 2rem 0 2rem 0;
@@ -50,7 +50,7 @@ type TComponent = {
   url: string;
 }
 
-const LinkTile = ({ data, icon, padding, url }: TComponent) => {
+const LinkTile = ({ data, icon, padding, url }: TComponent) => {  
   return (
     <Link href={url} passHref>
       <LinkTag padding={padding}>

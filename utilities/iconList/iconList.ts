@@ -1,15 +1,17 @@
 type TIconList = {
+  email: any;
   github: any;
   linkedIn: any;
   live: any;
-  email: any;
+  random: any;
 }
 
 const iconList: TIconList = {
+  email: ["fas", "paper-plane"],
   github: ["fas", "code-branch"],
   linkedIn: ["fab", "linkedin"],
   live: ["fas", "external-link-alt"],
-  email: ["fas", "paper-plane"]
+  random: ["fas", "random"]
 };
 
 export default iconList;

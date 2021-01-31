@@ -18,7 +18,7 @@ const ComponentContainer = styled.section`
 const RandomLabel = () => {
   return (
     <ComponentContainer>
-      <LinkTile data={siteData.home.randomButton.title} padding={"big"} url={"/random"} />
+      <LinkTile data={siteData.home.randomTile.title} icon={siteData.home.randomTile.icon} padding={"2rem 2rem 2rem 2rem"} url={"/random"} />
     </ComponentContainer>
   );
 };

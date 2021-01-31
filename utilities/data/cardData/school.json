@@ -1,0 +1,44 @@
+[
+  {
+    "categoryId": "CID008",
+    "categoryName": "School",
+    "categoryContent": [
+      {
+        "cardId": "C0011SCH001",
+        "paragraphOne": "Go to class! No matter how hungover, tired, or busy you may be, being present is the most important factor in succeeding.",
+        "paragraphTwo": "Missing class is a slippery slope to failing out.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0063SCH002",
+        "paragraphOne": "College isn't the only way to start a good career. Apprenticeships, trade schools, and military training can be great alternatives in today's world.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0065SCH003",
+        "paragraphOne": "Finish your degree even if you ultimately won't go into your studied field.",
+        "paragraphTwo": "Future employers may simply pay you more for having a degree.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0089SCH004",
+        "paragraphOne": "If you have to make a presentation in front of a group of people volunteer to be the first one up as everyone else will be so nervous about their own presentation that they won't pay attention to yours and will more than likely forget any mistake or stupid thing that you might do.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0130SCH005",
+        "paragraphOne": "When you get a new notebook, leave the first page blank. Number the pages and use the first page as a table of contents.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      }
+    ]
+  }
+]
+
