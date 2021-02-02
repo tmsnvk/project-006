@@ -50,7 +50,7 @@ type TComponent = {
   url: string;
 }
 
-const LinkTile = ({ data, icon, padding, url }: TComponent) => {  
+const LinkTile = ({ data, icon, padding, url }: TComponent) => {
   return (
     <Link href={url} passHref>
       <LinkTag padding={padding}>

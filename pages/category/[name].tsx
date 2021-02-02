@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import { CardContext } from "context/CardContext";
@@ -34,7 +34,7 @@ export const getServerSideProps = async ({ query }: TContext) => {
 
     return {
       props: {
-        data: {
+        cardData: {
           cardCategory: response.categoryName,
           cardId: responseContent.cardId,
           cardContent: {
@@ -52,7 +52,7 @@ export const getServerSideProps = async ({ query }: TContext) => {
 };
 
 type TData = {
-  data: {
+  cardData: {
     cardCategory: string;
     cardId: string;
     cardContent: {
@@ -62,35 +62,46 @@ type TData = {
       savvied: number;
     };
   };
-  isUpdate: boolean;
 }
 
-const Name = ({ data }: TData) => {
-  const { cardData, setCardData, isUpdated, setIsUpdated } = useContext(CardContext);
+const Name = ({ cardData }: TData) => {
+  const { setGetCardData, setSavvied, isUpdated, setIsUpdated } = useContext(CardContext);
+  const [category, setCategory] = useState<string>("");
 
+  // loading cardData
   useEffect(() => {
-    const getUpdate = () => {
-      setCardData({
-        cardCategory: data.cardCategory,
-        cardId: data.cardId,
+    const getUpdate = (): void => {
+      setGetCardData({
+        cardCategory: cardData.cardCategory,
+        cardId: cardData.cardId,
         cardContent: {
-          paragraphOne: data.cardContent.paragraphOne,
-          paragraphTwo: data.cardContent.paragraphTwo,
-          paragraphThree: data.cardContent.paragraphThree
-        },
-        savvied: data.cardContent.savvied
+          paragraphOne: cardData.cardContent.paragraphOne,
+          paragraphTwo: cardData.cardContent.paragraphTwo,
+          paragraphThree: cardData.cardContent.paragraphThree
+        }
       });
+      setSavvied(cardData.cardContent.savvied)
     }
 
     getUpdate();
-  }, []);
+  }, [cardData]);
 
+  // choosing category
+  useEffect(() => {
+    const getCategory = (): void => setCategory(window.location.href.substring(window.location.href.lastIndexOf("/") + 1));
+
+    getCategory();
+    return () => setCategory("");
+  }, [setCategory]);
+
+  // updating savvied-counter
   useEffect(() => {
     if (!isUpdated) return;
 
     const updateSavvied = async (): Promise<void> => {
       try {
-        const response = await axios.post("/api/savvied", { data: data.cardId });
+        const { data } = await axios.post("/api/savvied", { data: { id: cardData.cardId, category: cardData.cardCategory }});
+        setSavvied(data.savvied);
         setIsUpdated(false);
       } catch (error) {
         console.log(error);
@@ -103,12 +114,12 @@ const Name = ({ data }: TData) => {
   return (
     <>
       <Head>
-        <title>SavvyJar - Category: {data.cardCategory}</title>
+        <title>SavvyJar - Category: {cardData.cardCategory}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutContainer>
         <CardTile />
-        <NextChoice />
+        <NextChoice category={category} />
       </LayoutContainer>
     </>
   );

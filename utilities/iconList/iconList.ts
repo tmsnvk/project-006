@@ -1,4 +1,5 @@
 type TIconList = {
+  arrowUp: any;
   email: any;
   github: any;
   linkedIn: any;
@@ -7,6 +8,7 @@ type TIconList = {
 }
 
 const iconList: TIconList = {
+  arrowUp: ["fas", "angle-double-up"],
   email: ["fas", "paper-plane"],
   github: ["fas", "code-branch"],
   linkedIn: ["fab", "linkedin"],

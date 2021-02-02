@@ -1,6 +1,7 @@
- const ContactForm = require("../../utilities/mongodb/models/contactFormModel");
+import type { NextApiRequest, NextApiResponse } from "next";
+const ContactForm = require("../../utilities/mongodb/models/contactFormModel");
 
- const sendContactForm = async (request, response) => {
+ const sendContactForm = async (request: NextApiRequest, response: NextApiResponse) => {
    try {
     const { name, email, text } = request.body;
 

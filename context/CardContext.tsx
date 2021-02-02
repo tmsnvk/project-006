@@ -8,12 +8,13 @@ type TCardData = {
     paragraphTwo: string;
     paragraphThree: string;
   },
-  savvied: number;
 }
 
 type TCardContext = {
-  cardData: TCardData;
-  setCardData: (value: TCardData) => void;
+  getCardData: TCardData;
+  setGetCardData: (value: TCardData) => void;
+  savvied: number;
+  setSavvied: (value: number) => void;
   isUpdated: boolean;
   setIsUpdated: (value: boolean) => void;
 }
@@ -26,19 +27,19 @@ export const CardContext = createContext({} as TCardContext);
 
 export const CardContextProvider = ({ children }: TProvider) => {
   const [isUpdated, setIsUpdated] = useState(false);
-  const [cardData, setCardData] = useState({
+  const [savvied, setSavvied] = useState(0);
+  const [getCardData, setGetCardData] = useState({
     cardCategory: "",
     cardId: "",
     cardContent: {
       paragraphOne: "",
       paragraphTwo: "",
       paragraphThree: ""
-    },
-    savvied: 0
+    }
   });
 
   return (
-    <CardContext.Provider value={{ cardData, setCardData, isUpdated, setIsUpdated }}>
+    <CardContext.Provider value={{ getCardData, setGetCardData, savvied, setSavvied, isUpdated, setIsUpdated }}>
       {children}
     </CardContext.Provider>
   );

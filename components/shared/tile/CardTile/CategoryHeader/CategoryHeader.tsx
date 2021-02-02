@@ -20,15 +20,15 @@ const ContentId = styled.h2`
 `;
 
 const CategoryHeader = () => {
-  const { cardData } = useContext(CardContext);
+  const { getCardData } = useContext(CardContext);
 
   return (
     <ComponentContainer>
       <CategoryName>
-        Category: {cardData.cardCategory}
+        Category: {getCardData.cardCategory}
       </CategoryName>
       <ContentId>
-        CardID: {cardData.cardId}
+        CardID: {getCardData.cardId}
       </ContentId>
     </ComponentContainer>
   );

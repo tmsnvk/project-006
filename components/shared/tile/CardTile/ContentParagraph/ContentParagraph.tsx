@@ -13,14 +13,14 @@ const ComponentContainer = styled.div`
 `;
 
 const ContentParagraph = () => {
-  const { cardData } = useContext(CardContext);
+  const { getCardData } = useContext(CardContext);
 
   return (
     <ComponentContainer>
-      <CardText data={cardData.cardContent.paragraphOne} />
-      <CardText data={cardData.cardContent.paragraphTwo} />
-      <CardText data={cardData.cardContent.paragraphThree} />
-      <Savvied data={cardData.savvied} />
+      <CardText data={getCardData.cardContent.paragraphOne} />
+      <CardText data={getCardData.cardContent.paragraphTwo} />
+      <CardText data={getCardData.cardContent.paragraphThree} />
+      <Savvied />
     </ComponentContainer>
   );
 };

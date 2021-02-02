@@ -6,9 +6,9 @@ import { Navbar, Footer } from "components/main";
 import GlobalStyle from "utilities/theme/GlobalStyle";
 import theme from "utilities/theme/theme";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faCodeBranch, faExternalLinkAlt, faPaperPlane, faRandom } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDoubleUp, faCodeBranch, faExternalLinkAlt, faPaperPlane, faRandom } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-library.add(faCodeBranch, faExternalLinkAlt, faLinkedin, faPaperPlane, faRandom);
+library.add(faAngleDoubleUp, faCodeBranch, faExternalLinkAlt, faLinkedin, faPaperPlane, faRandom);
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
