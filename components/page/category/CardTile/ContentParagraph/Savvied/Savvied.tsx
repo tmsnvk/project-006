@@ -70,7 +70,8 @@ const Savvied = () => {
   return (
     <ComponentContainer>
       <SavviedButton onClick={handleCounter} disabled={isButtonDisabled}>
-        <StyledIcon icon={iconList.arrowUp} disabled={isButtonDisabled} /> Savvy it
+        <StyledIcon icon={iconList.arrowUp} disabled={isButtonDisabled} />
+        Savvy it
       </SavviedButton>
       <SavviedCounter>
         &#x2764; {savvied}

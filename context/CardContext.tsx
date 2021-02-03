@@ -17,6 +17,10 @@ type TCardContext = {
   setSavvied: (value: number) => void;
   isUpdated: boolean;
   setIsUpdated: (value: boolean) => void;
+  isRandom: boolean;
+  setIsRandom: (value: boolean) => void;
+  randomCategory: string;
+  setRandomCategory: (value: string) => void;
 }
 
 type TProvider = {
@@ -26,20 +30,14 @@ type TProvider = {
 export const CardContext = createContext({} as TCardContext);
 
 export const CardContextProvider = ({ children }: TProvider) => {
-  const [isUpdated, setIsUpdated] = useState(false);
+  const [getCardData, setGetCardData] = useState({ cardCategory: "", cardId: "", cardContent: { paragraphOne: "", paragraphTwo: "", paragraphThree: "" }});
   const [savvied, setSavvied] = useState(0);
-  const [getCardData, setGetCardData] = useState({
-    cardCategory: "",
-    cardId: "",
-    cardContent: {
-      paragraphOne: "",
-      paragraphTwo: "",
-      paragraphThree: ""
-    }
-  });
+  const [isUpdated, setIsUpdated] = useState(false);
+  const [isRandom, setIsRandom] = useState(false);
+  const [randomCategory, setRandomCategory] = useState("");
 
   return (
-    <CardContext.Provider value={{ getCardData, setGetCardData, savvied, setSavvied, isUpdated, setIsUpdated }}>
+    <CardContext.Provider value={{ getCardData, setGetCardData, savvied, setSavvied, isUpdated, setIsUpdated, isRandom, setIsRandom, randomCategory, setRandomCategory }}>
       {children}
     </CardContext.Provider>
   );

@@ -2,12 +2,12 @@ import { DefaultTheme } from "styled-components";
 
 const theme: DefaultTheme = {
   color: {
-    yellowDark: "#ffd479", // dark yellow
-    yellowLight: "#fee09f", // light yellow
-    grayDark: "#2d2d2d", // dark gray
-    grayLight: "#ffd479", // light gray
-    blueDark: "#6ab0f3", // dark blue
-    redDark: "#d90e00" // dark red
+    yellowDark: "#ffd479",
+    yellowLight: "#fee09f",
+    grayDark: "#2d2d2d",
+    grayLight: "#ffd479",
+    blueDark: "#6ab0f3",
+    redDark: "#d90e00"
   },
   fontFamily: {
     primary: `"Roboto Mono", sans-serif`,

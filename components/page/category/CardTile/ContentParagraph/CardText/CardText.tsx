@@ -11,13 +11,13 @@ const ComponentContainer = styled.p`
 `;
 
 type TComponent = {
-  data: string;
+  render: string;
 }
 
-const CardText = ({ data }: TComponent) => {
+const CardText = ({ render }: TComponent) => {
   return (
     <ComponentContainer>
-      {data}
+      {render}
     </ComponentContainer>
   );
 };

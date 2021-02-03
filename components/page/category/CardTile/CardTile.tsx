@@ -1,6 +1,9 @@
+import React from "react";
 import styled from "styled-components";
+import CategoryHeader from "./CategoryHeader";
+import ContentContainer from "./ContentParagraph";
 
-const CardTileContainer = styled.section`
+const ComponentContainer = styled.section`
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -21,4 +24,13 @@ const CardTileContainer = styled.section`
   }
 `;
 
-export default CardTileContainer;
+const CardTile = () => {
+  return (
+    <ComponentContainer>
+      <CategoryHeader />
+      <ContentContainer />
+    </ComponentContainer>
+  );
+};
+
+export default CardTile;

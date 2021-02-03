@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
-import { LinkTile } from "components/shared/tile";
+import { CardContext } from "context/CardContext";
+import { LinkTile } from "components/shared/links";
 import siteData from "utilities/data/siteData/siteData.json";
 
 const ComponentContainer = styled.section`
@@ -34,16 +35,20 @@ const LinkContainer = styled.div`
 `;
 
 type TRender = {
+  category: string;
   icon: string[];
   id: number;
-  name: string;
 }
 
 const CategoryLabels = () => {
-  const renderData = siteData.home.categories.names.map(({ icon, id, name }: TRender) => {
+  const { setIsRandom } = useContext(CardContext);
+
+  const handleClick = () => setIsRandom(false);
+
+  const renderData = siteData.home.categories.map(({ id, category, icon }: TRender) => {
     return (
       <LinkContainer key={id}>
-        <LinkTile data={name} icon={icon} padding={"1.5rem 1.5rem 1.5rem 1.5rem"} url={`/category/${name}`} />
+        <LinkTile url={`/category/${category}`} handleClick={handleClick} render={category} icon={icon} padding={"1.5rem 1.5rem 1.5rem 1.5rem"} />
       </LinkContainer>
     );
   });

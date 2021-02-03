@@ -12,17 +12,17 @@ const ComponentContainer = styled.div`
   }
 `;
 
-const ContentParagraph = () => {
+const ContentContainer = () => {
   const { getCardData } = useContext(CardContext);
 
   return (
     <ComponentContainer>
-      <CardText data={getCardData.cardContent.paragraphOne} />
-      <CardText data={getCardData.cardContent.paragraphTwo} />
-      <CardText data={getCardData.cardContent.paragraphThree} />
+      <CardText render={getCardData.cardContent.paragraphOne} />
+      <CardText render={getCardData.cardContent.paragraphTwo} />
+      <CardText render={getCardData.cardContent.paragraphThree} />
       <Savvied />
     </ComponentContainer>
   );
 };
 
-export default ContentParagraph;
+export default ContentContainer;

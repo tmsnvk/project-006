@@ -1,8 +1,8 @@
 {
-  "name": "project-006",
-  "private": true,
+  "name": "project-006_nextjs",
   "engines": {
-    "node": "14.x"
+    "node": "14.4.0",
+    "npm": "6.14.8"
   },
   "scripts": {
     "dev": "next dev",

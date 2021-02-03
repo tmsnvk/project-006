@@ -37,17 +37,15 @@ type TFilter = {
 
 const updateCounter = async (request: NextApiRequest, response: NextApiResponse<TResponse>): Promise<void> => {
   try {
-    const { id, category }: TRequestBody = request.body.data;
     const { db } = await connectToDatabase();
+    const { category, id }: TRequestBody = request.body.data;
 
-    await db.collection("categorydata").findOneAndUpdate({ "categoryName": category, "categoryContent.cardId": id }, ({ "$inc": { "categoryContent.$.savvied": +1 }}));
+    const updateCard = await db.collection("categorydata").findOneAndUpdate({ "categoryName": category, "categoryContent.cardId": id }, ({ "$inc": { "categoryContent.$.savvied": +1 }}));
+    const getCard: TGetCard = updateCard.value.categoryContent.filter(({ cardId }: TFilter) => cardId === id);
 
-    const findCategory: TFindCategory = await db.collection("categorydata").findOne({ "categoryName": category });
-    console.log(findCategory);
-    const getCard: TGetCard = findCategory.categoryContent.filter(({ cardId }: TFilter) => cardId === id);
-    return response.json({ savvied: getCard[0].savvied });
+    return response.json({ savvied: getCard[0].savvied + 1 });
   } catch (error) {
-    console.log(error);
+    return console.log(`===> The error is - ${error} <===`);
   }
 };
 

@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
-import { LinkTile } from "components/shared/tile";
+import { CardContext } from "context/CardContext";
+import { LinkTile } from "components/shared/links";
+import getRandomNumber from "utilities/helpers/getRandomNumber";
 import siteData from "utilities/data/siteData/siteData.json";
 
 const ComponentContainer = styled.section`
@@ -15,10 +17,23 @@ const ComponentContainer = styled.section`
   }
 `;
 
+type TFilter = {
+  category: string;
+}
+
 const RandomLabel = () => {
+  const { randomCategory, setRandomCategory, setIsRandom } = useContext(CardContext);
+
+  useEffect(() => {
+    const randomNumber = getRandomNumber(0, siteData.home.categories.length);
+    siteData.home.categories.filter(({ category }: TFilter, index) => index === randomNumber ? setRandomCategory(category) : null);
+  }, []);
+  
+  const handleClick = () => setIsRandom(true);
+
   return (
     <ComponentContainer>
-      <LinkTile data={siteData.home.randomTile.title} icon={siteData.home.randomTile.icon} padding={"2rem 2rem 2rem 2rem"} url={"/random"} />
+      <LinkTile url={`/category/${randomCategory}`} handleClick={handleClick} render={siteData.home.randomTile.title} icon={siteData.home.randomTile.icon} padding={"2rem 2rem 2rem 2rem"} />
     </ComponentContainer>
   );
 };

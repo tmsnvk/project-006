@@ -31,7 +31,6 @@ const LinkTag = styled.a<TStyledLinkTag>`
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     font-size: ${({ theme }) => theme.fontSize.large};
-    /* margin: 0 0 0 0; */
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.large}) {
@@ -44,18 +43,19 @@ const LinkTag = styled.a<TStyledLinkTag>`
 `;
 
 type TComponent = {
-  data: string;
+  render: string;
   icon?: string[];
   padding?: string;
   url: string;
+  handleClick?: () => void;
 }
 
-const LinkTile = ({ data, icon, padding, url }: TComponent) => {
+const LinkTile = ({ url, handleClick, render, icon, padding }: TComponent) => {
   return (
     <Link href={url} passHref>
-      <LinkTag padding={padding}>
-        {icon ? <StyledIcon icon={icon}></StyledIcon> : null}
-        {data}
+      <LinkTag onClick={handleClick} padding={padding}>
+        {icon ? <StyledIcon icon={icon} /> : null}
+        {render}
       </LinkTag>
     </Link>
   );

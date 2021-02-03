@@ -1,3 +1,5 @@
-import NextChoice from "./NextChoice";
+import CardTile from "./CardTile";
+import NextDefaultChoice from "./NextDefaultChoice";
+import NextRandomChoice from "./NextRandomChoice";
 
-export { NextChoice };
+export { CardTile, NextDefaultChoice, NextRandomChoice };

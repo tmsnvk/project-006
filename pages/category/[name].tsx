@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import Head from "next/head";
 import axios from "axios";
 import { CardContext } from "context/CardContext";
-import { NextChoice } from "components/page/category";
+import { NextDefaultChoice, NextRandomChoice } from "components/page/category";
 import { LayoutContainer } from "components/shared/containers";
-import { CardTile } from "components/shared/tile";
+import { CardTile } from "components/page/category";
 import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
 import getRandomNumber from "utilities/helpers/getRandomNumber";
 
@@ -51,7 +51,7 @@ export const getServerSideProps = async ({ query }: TContext) => {
   }
 };
 
-type TData = {
+type TCardData = {
   cardData: {
     cardCategory: string;
     cardId: string;
@@ -64,8 +64,8 @@ type TData = {
   };
 }
 
-const Name = ({ cardData }: TData) => {
-  const { setGetCardData, setSavvied, isUpdated, setIsUpdated } = useContext(CardContext);
+const Name = ({ cardData }: TCardData) => {
+  const { setGetCardData, setSavvied, isUpdated, setIsUpdated, isRandom } = useContext(CardContext);
   const [category, setCategory] = useState<string>("");
 
   // loading cardData
@@ -91,24 +91,23 @@ const Name = ({ cardData }: TData) => {
     const getCategory = (): void => setCategory(window.location.href.substring(window.location.href.lastIndexOf("/") + 1));
 
     getCategory();
-    return () => setCategory("");
   }, [setCategory]);
 
   // updating savvied-counter
   useEffect(() => {
     if (!isUpdated) return;
 
-    const updateSavvied = async (): Promise<void> => {
+    const updateSavviedCounter = async (): Promise<void> => {
       try {
-        const { data } = await axios.post("/api/savvied", { data: { id: cardData.cardId, category: cardData.cardCategory }});
+        const { data } = await axios.post("/api/savvied", { data: { id: cardData.cardId, category: cardData.cardCategory }}, { headers: { "Content-Type": "application/json" }});
         setSavvied(data.savvied);
         setIsUpdated(false);
       } catch (error) {
-        console.log(error);
+        return console.log(`===> The error is - ${error} <===`);
       }
     };
 
-    updateSavvied();
+    updateSavviedCounter();
   }, [isUpdated]);
 
   return (
@@ -119,7 +118,7 @@ const Name = ({ cardData }: TData) => {
       </Head>
       <LayoutContainer>
         <CardTile />
-        <NextChoice category={category} />
+        {!isRandom ? <NextDefaultChoice category={category} /> : <NextRandomChoice />}
       </LayoutContainer>
     </>
   );
