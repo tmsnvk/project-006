@@ -1,47 +1,124 @@
 [
   {
-    "categoryId": "CID005",
+    "categoryId": "CID008",
     "categoryName": "Relationships",
     "categoryContent": [
       {
-        "cardId": "C0005REL001",
+        "cardId": "C0058REL001",
+        "paragraphOne": "If you want a smarter kid, teach your child to read as early as possible and instill in them a love for books.",
+        "paragraphTwo": "As soon as they can read, they can teach themselves and that will be a life-long advantage over their peers who don't have that same ability.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0059REL002",
         "paragraphOne": "Anytime you think about contacting an ex or old crush - rub one out first.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0017REL002",
+        "cardId": "C0060REL003",
+        "paragraphOne": "If a family member gets diagnosed with dementia or Alzheimer's disease, in the early stages try to find out what their favorite songs of all time are.",
+        "paragraphTwo": "In this way you would be able to create a playlist for them that could be of great benefit in the later stages of the disease.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0061REL004",
+        "paragraphOne": "Strict parents can turn their kids into more effective liars because children who are afraid to tell the truth learn more deceptive behaviors to avoid getting in trouble.",
+        "paragraphTwo": "Set reasonable rules and expectations for your child.",
+        "paragraphThree": "Reward positive behavior and accept mistakes as a chance for learning.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0062REL005",
         "paragraphOne": "Before you get married, have in-depth, planning discussions around: kids, money, housing, vacations, current debt, retirement, day to day expectations, pets, in-laws, transportation, and careers... don't assume anything.",
         "paragraphTwo": "Ask many questions - ensure you are on the same page.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0026REL003",
+        "cardId": "C0063REL006",
+        "paragraphOne": "Many problems in marriage are really just problems with being a bad roommate.",
+        "paragraphTwo": "Learn how to be a good roommate, and it will solve many of the main issues that plague marriages.",
+        "paragraphThree": "This includes communicating about something bothering you before you get too angry to communicate properly.",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0064REL007",
         "paragraphOne": "After a bad break up, do ten things that your ex would never do with you.",
         "paragraphTwo": "You'll feel better and realize how much of yourself was being held back.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0043REL004",
+        "cardId": "C0065REL008",
+        "paragraphOne": "Your family would rather get a phone call from you at 3AM needing a lift, than a phone call from the Police at 4AM finding out you didn't make it home safely.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0066REL009",
         "paragraphOne": "Before ending a relationship, change all of your passwords and remove your account info / auto login on all devices.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0053REL005",
+        "cardId": "C0067REL010",
         "paragraphOne": "Don't be on your best behaviour on a first date. ",
         "paragraphTwo": "Do be your normal, everyday, relaxed hanging-with-friends behaviour.",
         "paragraphThree": "You want the person to like you for who you actually are, not who you are pretending to be. You will save yourself a lot of wasted time dating people who only like the fake you.",
         "savvied": 0
       },
       {
-        "cardId": "C0079REL006",
+        "cardId": "C0068REL011",
+        "paragraphOne": "You shouldn't shield your children from a challenging life.",
+        "paragraphTwo": "By doing so, you will inadvertently unprepare them for the struggles that come with the realities of life.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C00698REL012",
+        "paragraphOne": "If you raise your children to enjoy helping you bake and cook in the kitchen, they are less likely to be picky eaters.",
+        "paragraphTwo": "They will be more inclined to try a wider range of foods if they help prepare them.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0070REL013",
         "paragraphOne": "If your partner can't make a decision about where to eat, play the 5-2-1 game.",
         "paragraphTwo": "You give them 5 restaurants, they pick two, and you pick from those.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0071REL014",
+        "paragraphOne": "Don't ask a married couple when they are going to have kids.",
+        "paragraphTwo": "They might not be able to and you'll ruin their day bringing up sad thoughts.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0072REL015",
+        "paragraphOne": "If you're taking care of children, always make bed time special and safe.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0073REL016",
+        "paragraphOne": "Just because you’re related to someone, doesn’t mean you have to love, or even like them.",
+        "paragraphTwo": "If someone doesn’t respect you, don’t be fooled into respecting them because they’re a relative.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0074REL017",
+        "paragraphOne": "Need to divide something fairly between kids?",
+        "paragraphTwo": "Get one of them to divide, and the other person gets first pick.",
         "paragraphThree": "",
         "savvied": 0
       }

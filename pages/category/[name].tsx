@@ -29,7 +29,7 @@ export const getServerSideProps = async ({ query }: TContext) => {
   try {
     const { db } = await connectToDatabase();
 
-    const response: TResponse = await db.collection("categorydata").findOne({ "categoryName": query.name });
+    const response: TResponse = await db.collection("categorydata").findOne({ "categoryName": query.name.toLowerCase() });
     const responseContent = response.categoryContent[getRandomNumber(0, response.categoryContent.length)];
 
     return {

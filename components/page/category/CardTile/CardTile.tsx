@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CategoryHeader from "./CategoryHeader";
-import ContentContainer from "./ContentParagraph";
+import ContentContainer from "./ContentContainer";
 
 const ComponentContainer = styled.section`
   grid-column-start: 1;

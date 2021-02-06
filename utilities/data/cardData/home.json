@@ -1,45 +1,57 @@
 [
   {
-    "categoryId": "CID007",
+    "categoryId": "CID003",
     "categoryName": "Home",
     "categoryContent": [
       {
-        "cardId": "C0010HOM001",
+        "cardId": "C0013HOM001",
         "paragraphOne": "Pay attention to the smell of your home when you come back from a trip.",
         "paragraphTwo": "That's what it smells like to guests all the time, you just get used to it.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0068HOM002",
+        "cardId": "C0014HOM002",
         "paragraphOne": "When you have a 3-day long weekend, do all of your chores (laundry, cleaning, homework, etc.) the night before the weekend begins.",
         "paragraphTwo": "You may have to stay up late that night but you'll thank yourself later when you have 3 full days to relax.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0085HOM003",
+        "cardId": "C0015HOM003",
         "paragraphOne": "If you are moving into a new leased house, take a picture of every wall, closet, cupboard and furniture.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0094HOM004",
+        "cardId": "C0016HOM004",
         "paragraphOne": "If you have a guest bedroom in your home, spend a night in it yourself to be sure there are no annoyances and that it is comfortable.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0126HOM005",
+        "cardId": "C0017HOM005",
         "paragraphOne": "When moving, pack a “first day” box with everything you think you’ll need right after you arrive.",
         "paragraphTwo": "It’s annoying to dig through all your boxes for things like modems and hair dryers when you’re tired from your move.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0018HOM006",
+        "paragraphOne": "If your clothes don't smell fresh even after washing, it could be your machine.",
+        "paragraphTwo": "The easiest way to get rid of mold in your machine is to use a dishwasher tab or some detergent and do a cycle without clothes.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0019HOM007",
+        "paragraphOne": "Microwaving leftovers or a frozen meal? Turn the power down and the timer up.",
+        "paragraphTwo": "10 minutess at half power does a better job than 3 minutes on full throttle.",
         "paragraphThree": "",
         "savvied": 0
       }
     ]
   }
 ]
-
- 

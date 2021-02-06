@@ -1,32 +1,81 @@
 [
   {
-    "categoryId": "CID018",
+    "categoryId": "CID004",
     "categoryName": "IT",
     "categoryContent": [
       {
-        "cardId": "C0117IT001",
+        "cardId": "C0020IT001",
+        "paragraphOne": "When you sign up for anything online, put the website’s name as your middle name.",
+        "paragraphTwo": "That way when you receive spam or ad emails, you will know who sold your info.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0021IT002",
+        "paragraphOne": "When using Google, add '-site:pinterest.*' (without quotes) to your query to avoid receiving hundreds of useless Pinterest results.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0022IT003",
+        "paragraphOne": "Yelp replaces restaurant phone numbers with a special number that charges that business a marketing fee.",
+        "paragraphTwo": "If you find a good restaurant on Yelp Google their phone number instead so they don't lose any money.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0023IT004",
+        "paragraphOne": "If you ever need a program you want for free (for example a video / photo editor) don’t search for 'free' but search for 'open source' to avoid limited trial versions, adverts and malware.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0024IT005",
+        "paragraphOne": "Don't argue with people on online platforms.",
+        "paragraphTwo": "People tend to be more defensive of their opinions and more aggressive with their words. It will only ruin your day and waste your time.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0025IT006",
         "paragraphOne": "If you accidentally press the 'spacebar' and scroll down the page, you can press 'shift + space' and go back to where you were.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0123IT002",
+        "cardId": "C0026IT007",
         "paragraphOne": "'Ctrl + backspace' deletes word by word, rather than letter by letter.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0124IT003",
+        "cardId": "C0027IT008",
         "paragraphOne": "'Ctrl + arrow keys' moves the cursor one word at a time.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0125IT004",
+        "cardId": "C0028IT009",
         "paragraphOne": "'Ctrl + shift + arrow keys' highlights one word at a time.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0029IT010",
+        "paragraphOne": "When browsing en.wikipedia.org, you can replace 'en' with 'simple' to bring up simple English wikipedia, where everything is explained like you're five.",
+        "paragraphTwo": "",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0030IT011",
+        "paragraphOne": "When unsubscribing from a service online, take a screen shot of the finalized screen as proof in the event they try to bill you again against your will.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0

@@ -1,73 +1,78 @@
 [
   {
-    "categoryId": "CID014",
+    "categoryId": "CID007",
     "categoryName": "Productivity",
     "categoryContent": [
       {
-        "cardId": "C0039PRD001",
+        "cardId": "C0048PRD001",
         "paragraphOne": "If you need somewhere to work and/or relax with friendly staff, plenty of seating, free wifi - go to a library!",
         "paragraphTwo": "You’re under no obligation to buy anything to sit there.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0060PRD002",
+        "cardId": "C0049PRD002",
         "paragraphOne": "Dreading something? Avoidance makes it 100x harder because it completely disempowers you.",
         "paragraphTwo": "When the only way out is through, turn and face the discomfort, take a deep breath and walk towards it.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0072PRD003",
+        "cardId": "C0050PRD003",
         "paragraphOne": "If you're ever not sure what to do, clean. When you figure it what you should be doing, you'll have a clear work space.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0084PRD004",
+        "cardId": "C0051PRD004",
         "paragraphOne": "Learn excel.",
         "paragraphTwo": "It's one of the most under-appreciated tools within any productivity environment and rarely used to its full potential.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0118PRD005",
+        "cardId": "C0052PRD005",
         "paragraphOne": "When your mental health isn't in the best state, give yourself a break.",
         "paragraphTwo": "Don't feel guilty for things you can't do. Normal things like eating, sleeping or socialising may be difficult, it's okay to struggle.",
         "paragraphThree": "Rest, recover, be kind to yourself and know the bad times are temporary.",
         "savvied": 0
       },
       {
-        "cardId": "C0122PRD006",
+        "cardId": "C0053PRD006",
         "paragraphOne": "Whatever the day, situation, or your mood, get up in the morning, take a shower, wear fresh clothes and get ready for the day, even if you don't have any plans or work.",
         "paragraphTwo": "You're more likely to feel good and be in a better mood all day and send good vibes to others around you.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0128PRD007",
+        "cardId": "C0054PRD007",
         "paragraphOne": "Your hobbies are your hobbies for a reason, let it be a thing a of comfort, and not a chore or a burden.",
         "paragraphTwo": "",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0134PRD008",
+        "cardId": "C0055PRD008",
         "paragraphOne": "Go for a walk every day.",
         "paragraphTwo": "While this sounds ineffective, it actually proves helpful to making yourself more productive and happy - and is very effective at doing so.",
         "paragraphThree": "",
         "savvied": 0
       },
       {
-        "cardId": "C0135PRD009",
+        "cardId": "C0056PRD009",
         "paragraphOne": "Don't put your life on hold waiting for closure on something you're struggling with.",
         "paragraphTwo": "Many of life's most difficult situations don't have reasonable explanations.",
+        "paragraphThree": "",
+        "savvied": 0
+      },
+      {
+        "cardId": "C0057PRD010",
+        "paragraphOne": "Stay away from the no sleep/hustler lifestyle. It creates unsustainable expectations, encourages an unhealthy lifestyle and promotes burnout. You'll simply work yourself into exhaustion.",
+        "paragraphTwo": "Instead, learn to use your time wisely and enforce reasonable boundaries.",
         "paragraphThree": "",
         "savvied": 0
       }
     ]
   }
 ]
-
- 

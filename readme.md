@@ -4,7 +4,6 @@
 
 #### used packages
 ```
-FRONT-END
 + axios                  - http client.
 + fontawesome            - icons for styling purposes.
 + nextjs                 - client-side framework.

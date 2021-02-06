@@ -1,26 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
 
-type TRequestBody = {
-  id: string;
-  category: string;
-}
-
 type TResponse = {
   savvied: number;
 }
 
-type TFindCategory = {
-  _id: number;
-  categoryId: string;
-  categoryName: string;
-  categoryContent: {
-    cardId: string;
-    paragraphOne: string;
-    paragraphTwo: string;
-    paragraphThree: string;
-    savvied: number;
-  }[]
+type TRequestBody = {
+  id: string;
+  category: string;
 }
 
 type TGetCard = {
