@@ -7,7 +7,7 @@ type TCardData = {
     paragraphOne: string;
     paragraphTwo: string;
     paragraphThree: string;
-  },
+  }
 }
 
 type TCardContext = {

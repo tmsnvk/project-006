@@ -68,7 +68,7 @@ const Name = ({ cardData }: TCardData) => {
   const { setGetCardData, setSavvied, isUpdated, setIsUpdated, isRandom } = useContext(CardContext);
   const [category, setCategory] = useState<string>("");
 
-  // loading cardData
+  //loading cardData
   useEffect(() => {
     const getUpdate = (): void => {
       setGetCardData({

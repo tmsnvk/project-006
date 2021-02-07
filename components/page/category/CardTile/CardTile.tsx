@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
-import CategoryHeader from "./CategoryHeader";
-import ContentContainer from "./ContentContainer";
+import { CardContext } from "context/CardContext";
+import { CardText, CategoryHeader, CategoryName, ContentContainer, ContentId } from "components/shared/cardtile";
+import Savvied from "./Savvied";
 
 const ComponentContainer = styled.section`
   grid-column-start: 1;
@@ -25,10 +26,20 @@ const ComponentContainer = styled.section`
 `;
 
 const CardTile = () => {
+  const { getCardData, savvied } = useContext(CardContext);
+
   return (
     <ComponentContainer>
-      <CategoryHeader />
-      <ContentContainer />
+      <CategoryHeader>
+        <CategoryName render={getCardData.cardCategory} />
+        <ContentId render={getCardData.cardId} />
+      </CategoryHeader>
+      <ContentContainer>
+        <CardText render={getCardData.cardContent.paragraphOne} />
+        <CardText render={getCardData.cardContent.paragraphTwo} />
+        <CardText render={getCardData.cardContent.paragraphThree} />
+        <Savvied render={savvied} />
+      </ContentContainer>
     </ComponentContainer>
   );
 };

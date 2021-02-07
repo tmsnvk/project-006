@@ -45,8 +45,8 @@ const PageLinkContainer = styled.div`
 `;
 
 const PageLink = styled.a`
-  width: 10rem;
-  padding: 1rem 1rem 1rem 1rem;
+  width: 12rem;
+  padding: 1rem 0 1rem 0;
   margin: 1rem 1rem 1rem 1rem;
   background-color: ${({ theme }) => theme.color.yellowDark};
   font-weight: 600;
@@ -70,7 +70,7 @@ const Navbar = () => {
       </LogoContainer>
       <PageLinkContainer>
         <Link href="/"><PageLink>Home</PageLink></Link>
-        <Link href="/about"><PageLink>About</PageLink></Link>
+        <Link href="/top"><PageLink>Top5 &#x2764;</PageLink></Link>
       </PageLinkContainer>
     </SectionContainer>
   );

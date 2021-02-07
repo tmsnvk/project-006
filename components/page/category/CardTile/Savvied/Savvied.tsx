@@ -54,8 +54,12 @@ const SavviedCounter = styled.div`
   }
 `;
 
-const Savvied = () => {
-  const { getCardData, savvied, setIsUpdated } = useContext(CardContext);
+type TComponent = {
+  render?: number;
+}
+
+const Savvied = ({ render }: TComponent) => {
+  const { getCardData, setIsUpdated } = useContext(CardContext);
   const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -74,7 +78,7 @@ const Savvied = () => {
         Savvy it
       </SavviedButton>
       <SavviedCounter>
-        &#x2764; {savvied}
+        &#x2764; {render}
       </SavviedCounter>
     </ComponentContainer>
   );

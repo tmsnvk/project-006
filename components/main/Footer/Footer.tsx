@@ -4,6 +4,7 @@ import styled from "styled-components";
 const SectionContainer = styled.footer`
   width: 100%;
   text-align: center;
+  margin: 2.5rem 0 1rem 0;
 `;
 
 const FixFooterPosition = styled.div`

@@ -65,5 +65,10 @@
       "category": "Choose a category!",
       "random": "Another random one!"
     }
+  },
+  "topSavvied": {
+    "pagetext": {
+      "title": "Top 5 most savvied savvies."
+    }
   }
 }
