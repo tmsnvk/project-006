@@ -5,24 +5,24 @@ import { CardContext } from "context/CardContext";
 import { NextDefaultChoice, NextRandomChoice } from "components/page/category";
 import { LayoutContainer } from "components/shared/containers";
 import { CardTile } from "components/page/category";
-import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
+import { connectToDatabase } from "utilities/mongodb/mongodb";
 import getRandomNumber from "utilities/helpers/getRandomNumber";
 
 type TContext = {
   query: {
-    name: string;
-  };
+    name: string
+  }
 }
 
 type TResponse = {
-  categoryName: string;
+  categoryName: string
   categoryContent: {
-    cardId: string;
-    paragraphOne: string;
-    paragraphTwo: string;
-    paragraphThree: string;
-    savvied: number;
-  }[];
+    cardId: string
+    paragraphOne: string
+    paragraphTwo: string
+    paragraphThree: string
+    savvied: number
+  }[]
 }
 
 export const getServerSideProps = async ({ query }: TContext) => {
@@ -47,21 +47,21 @@ export const getServerSideProps = async ({ query }: TContext) => {
       }
     };
   } catch (error) {
-    console.log(error);
+    console.error(`===> The error is - ${error} <===`);
   }
 };
 
 type TCardData = {
   cardData: {
-    cardCategory: string;
-    cardId: string;
+    cardCategory: string
+    cardId: string
     cardContent: {
-      paragraphOne: string;
-      paragraphTwo: string;
-      paragraphThree: string;
-      savvied: number;
-    };
-  };
+      paragraphOne: string
+      paragraphTwo: string
+      paragraphThree: string
+      savvied: number
+    }
+  }
 }
 
 const Name = ({ cardData }: TCardData) => {
@@ -103,7 +103,7 @@ const Name = ({ cardData }: TCardData) => {
         setSavvied(data.savvied);
         setIsUpdated(false);
       } catch (error) {
-        return console.log(`===> The error is - ${error} <===`);
+        return console.error(`===> The error is - ${error} <===`);
       }
     };
 
@@ -114,7 +114,7 @@ const Name = ({ cardData }: TCardData) => {
     <>
       <Head>
         <title>SavvyJar - Category: {cardData.cardCategory}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel={"icon"} href={"/favicon.ico"} />
       </Head>
       <LayoutContainer>
         <CardTile />

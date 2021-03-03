@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { TComponent} from "./Savvied.type";
 
 const ComponentContainer = styled.div`
   display: flex;
@@ -10,22 +11,18 @@ const ComponentContainer = styled.div`
 
 const SavviedCounter = styled.div`
   padding: 1rem 1rem 1rem 1rem;
-  background-color: ${({ theme }) => theme.color.yellowDark};
+  background-color: ${({ theme }) => theme.color.backgroundDark};
   font-family: ${({ theme }) => theme.fontFamily.secondary};
-  font-size: ${({ theme }) => theme.fontSize.small};
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
-  border-radius: 0.75rem;
+  box-shadow: 0 0.2rem 0.5rem 0 ${({ theme }) => theme.color.secondary};
+  border-radius: 0.5rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    font-size: ${({ theme }) => theme.fontSize.large};
+    font-size: 2rem;
   }
 `;
-
-type TComponent = {
-  render: number;
-}
 
 const Savvied = ({ render }: TComponent) => {
   return (

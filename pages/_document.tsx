@@ -34,21 +34,12 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet" />
+          <link rel={"preconnect"} href={"https://fonts.gstatic.com"} />
+          <link href={"https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@400;600&display=swap"} rel={"stylesheet"} />
         </Head>
         <body>
           <Main />
           <NextScript />
-          <style jsx global>
-            {`
-              #__next {
-                display: flex;
-                min-height: 100vh;
-                flex-direction: column;
-              }
-            `}
-          </style>
         </body>
       </Html>
     );

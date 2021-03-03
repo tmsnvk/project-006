@@ -1,21 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { TComponent } from "./PageMessage.type";
 
 const ContentParagraph = styled.p`
   padding: 1rem 0 1rem 0;
-  font-size: ${({ theme }) => theme.fontSize.small};
+  font-size: 1.4rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.large}) {
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-size: 1.6rem;
   }
 `;
-
-type TComponent = {
-  text: {
-    id: number;
-    content: string;
-  }[]
-}
 
 const PageMessage = ({ text }: TComponent) => {
   const renderData = text.map(({ content, id }) => {

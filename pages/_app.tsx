@@ -2,13 +2,12 @@ import React from "react";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { CardContextProvider } from "context/CardContext";
-import { Navbar, Footer } from "components/main";
+import { Footer, Navbar } from "components/main";
 import GlobalStyle from "utilities/theme/GlobalStyle";
 import theme from "utilities/theme/theme";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faAngleDoubleUp, faCodeBranch, faExternalLinkAlt, faPaperPlane, faRandom } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-library.add(faAngleDoubleUp, faCodeBranch, faExternalLinkAlt, faLinkedin, faPaperPlane, faRandom);
+import { faAngleDoubleUp, faAtom, faBuilding, faCodeBranch, faDesktop, faExternalLinkAlt, faHeartbeat, faHouseUser, faPaperPlane, faPaw, faPeopleArrows, faPlaneDeparture, faRandom, faTable, faUsers, faUserGraduate } from "@fortawesome/free-solid-svg-icons";
+library.add(faAngleDoubleUp, faAtom, faBuilding, faCodeBranch, faDesktop, faExternalLinkAlt, faHeartbeat, faHouseUser, faPaperPlane, faPaw, faPeopleArrows, faPlaneDeparture, faRandom, faTable, faUsers, faUserGraduate);
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (

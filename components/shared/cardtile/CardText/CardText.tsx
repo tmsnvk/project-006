@@ -1,18 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { TComponent } from "./CardText.type";
 
 const ComponentContainer = styled.p`
   padding: 1rem 0 1rem 0;
-  font-size: ${({ theme }) => theme.fontSize.small};
+  font-size: 1.4rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-size: 1.6rem;
   }
 `;
-
-type TComponent = {
-  render: string;
-}
 
 const CardText = ({ render }: TComponent) => {
   return (

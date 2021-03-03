@@ -2,7 +2,8 @@ import React from "react";
 import Head from "next/head";
 import { LayoutContainer } from "components/shared/containers";
 import { PageText, CardTile } from "components/page/top";
-import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
+import { connectToDatabase } from "utilities/mongodb/mongodb";
+import { usePageTracking } from "utilities/helpers/analytics";
 
 export const getServerSideProps = async () => {
   try {
@@ -19,31 +20,33 @@ export const getServerSideProps = async () => {
       }
     };
   } catch (error) {
-    console.log(error);
+    console.error(`===> The error is - ${error} <===`);
   }
 };
 
 type TComponent = {
   cardData: {
     categoryContent: {
-      cardId: string;
-      paragraphOne: string;
-      paragraphTwo: string;
-      paragraphThree: string;
-      savvied: number;
+      cardId: string
+      paragraphOne: string
+      paragraphTwo: string
+      paragraphThree: string
+      savvied: number
     },
-    categoryId: string;
-    categoryName: string;
-    _id: string;
+    categoryId: string
+    categoryName: string
+    _id: string
   }[]
 }
 
 const TopSavvied = ({ cardData }: TComponent) => {
+  usePageTracking("toplist");
+
   return (
     <>
       <Head>
         <title>SavvyJar - Top Savvies</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel={"icon"} href={"/favicon.ico"} />
       </Head>
       <LayoutContainer>
         <PageText />

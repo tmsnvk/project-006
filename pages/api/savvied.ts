@@ -1,25 +1,25 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { connectToDatabase } from "utilities/mongodb/utilities/mongodb";
+import { connectToDatabase } from "utilities/mongodb/mongodb";
 
 type TResponse = {
-  savvied: number;
+  savvied: number
 }
 
 type TRequestBody = {
-  id: string;
-  category: string;
+  id: string
+  category: string
 }
 
 type TGetCard = {
   cardId: string;
-  paragraphOne: string;
-  paragraphTwo: string;
-  paragraphThree: string;
-  savvied: number;
+  paragraphOne: string
+  paragraphTwo: string
+  paragraphThree: string
+  savvied: number
 }[]
 
 type TFilter = {
-  cardId: string;
+  cardId: string
 }
 
 const updateCounter = async (request: NextApiRequest, response: NextApiResponse<TResponse>): Promise<void> => {
@@ -32,7 +32,7 @@ const updateCounter = async (request: NextApiRequest, response: NextApiResponse<
 
     return response.json({ savvied: getCard[0].savvied + 1 });
   } catch (error) {
-    return console.log(`===> The error is - ${error} <===`);
+    return console.error(`===> The error is - ${error} <===`);
   }
 };
 

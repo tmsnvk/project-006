@@ -1,15 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { TComponent } from "./PageTitle.type";
 
 const ComponentContainer = styled.h1`
   margin: 2.5rem 0 2.5rem 0;
-  font-size: ${({ theme }) => theme.fontSize.xLarge};
+  font-size: 2.6rem;
   text-align: center;
 `;
-
-type TComponent = {
-  text: string;
-}
 
 const PageTitle = ({ text }: TComponent) => {
   return (

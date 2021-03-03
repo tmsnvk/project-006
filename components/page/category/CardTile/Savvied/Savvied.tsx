@@ -1,8 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { CardContext } from "context/CardContext";
 import { StyledIcon } from "components/shared/utilities";
+import { ContainerStyleTemplate } from "components/shared/containers";
 import iconList from "utilities/iconList/iconList";
+import { useButtonDisabled } from "./Savvied.hooks";
+import { TComponent } from "./Savvied.type";
 
 const ComponentContainer = styled.div`
   display: flex;
@@ -12,22 +14,21 @@ const ComponentContainer = styled.div`
 `;
 
 const SavviedButton = styled.button`
+  ${ContainerStyleTemplate}
+
   margin: 0 2rem 0 2rem;
   padding: 1rem 1rem 1rem 1rem;
-  background-color: ${({ theme }) => theme.color.yellowDark};
-  color: ${({ disabled }) => !disabled ? ({ theme }) => theme.color.grayDark : ({ theme }) => theme.color.blueDark};
+  background-color: ${({ theme }) => theme.color.backgroundDark};
+  color: ${({ disabled }) => !disabled ? ({ theme }) => theme.color.primaryDark : ({ theme }) => theme.color.secondary};
   font-family: ${({ theme }) => theme.fontFamily.secondary};
-  font-size: ${({ theme }) => theme.fontSize.small};
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
-  border-radius: 0.75rem;
 
   &:hover {
-    background-color: ${({ disabled }) => !disabled ? ({ theme }) => theme.color.blueDark : ({ theme }) => theme.color.yellowDark};
-    box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.grayDark};
+    background-color: ${({ disabled }) => !disabled ? ({ theme }) => theme.color.secondary : ({ theme }) => theme.color.backgroundDark};
     transform: ${({ disabled }) => !disabled ? "scale(1.05)" : null};
-    cursor: ${({ disabled }) => !disabled ? "pointer" : "not-allowed"};;
+    cursor: ${({ disabled }) => !disabled ? "pointer" : "not-allowed"};
   }
 
   &:focus {
@@ -35,41 +36,27 @@ const SavviedButton = styled.button`
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    font-size: ${({ theme }) => theme.fontSize.large};
+    font-size: 2rem;
   }
 `;
 
 const SavviedCounter = styled.div`
   padding: 1rem 1rem 1rem 1rem;
-  background-color: ${({ theme }) => theme.color.yellowDark};
+  background-color: ${({ theme }) => theme.color.backgroundDark};
   font-family: ${({ theme }) => theme.fontFamily.secondary};
-  font-size: ${({ theme }) => theme.fontSize.small};
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
+  box-shadow: 0 0.2rem 0.5rem 0 ${({ theme }) => theme.color.secondary};
   border-radius: 0.75rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    font-size: ${({ theme }) => theme.fontSize.large};
+    font-size: 2rem;
   }
 `;
 
-type TComponent = {
-  render?: number;
-}
-
 const Savvied = ({ render }: TComponent) => {
-  const { getCardData, setIsUpdated } = useContext(CardContext);
-  const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false);
-
-  useEffect(() => {
-    setIsButtonDisabled(false);
-  }, [getCardData]);
-
-  const handleCounter = (): void => {
-    setIsUpdated(true);
-    setIsButtonDisabled(true);
-  };
+  const { handleCounter, isButtonDisabled } = useButtonDisabled();
 
   return (
     <ComponentContainer>
@@ -78,7 +65,7 @@ const Savvied = ({ render }: TComponent) => {
         Savvy it
       </SavviedButton>
       <SavviedCounter>
-        &#x2764; {render}
+        {"\u2764"} {render}
       </SavviedCounter>
     </ComponentContainer>
   );

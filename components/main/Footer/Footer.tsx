@@ -3,29 +3,21 @@ import styled from "styled-components";
 
 const SectionContainer = styled.footer`
   width: 100%;
+  margin: 5rem 0 1rem 0;
   text-align: center;
-  margin: 2.5rem 0 1rem 0;
 `;
-
-const FixFooterPosition = styled.div`
-  flex-grow: 1;
-`;
-
 const FooterText = styled.p`
   padding: 0 0 1rem 0;
-  font-size: ${({ theme }) => theme.fontSize.default};
+  font-size: 1rem;
   font-weight: 600;
 `;
-
-const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
     <>
-      <FixFooterPosition></FixFooterPosition>
       <SectionContainer>
         <FooterText>
-          tamas novak with &#x2764;, 2020 - {currentYear}
+          tamas novak with {"\u2764"}, 2020 - 2021
         </FooterText>
         <FooterText>
           built with: [nextjs, mongodb]

@@ -1,22 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-type TStyled = {
-  disabled?: boolean;
-}
+import { TComponent, TStyled } from "./StyledIcon.type";
 
 const ComponentContainer = styled(FontAwesomeIcon)<TStyled>`
   display: inline-block;
-  color: ${({ disabled }) => !disabled ? ({ theme }) => theme.color.grayDark : ({ theme }) => theme.color.blueDark};
-  font-size: ${({ theme }) => theme.fontSize.large};
-  margin: 0 0.5rem 0 0.5rem;
+  color: ${({ disabled }) => !disabled ? ({ theme }) => theme.color.primaryDark : ({ theme }) => theme.color.secondary};
+  font-size: 2rem;
+  margin: 0 1rem 0 0.5rem;
 `;
-
-type TComponent = {
-  icon: any;
-  disabled?: boolean;
-}
 
 const StyledIcon = ({ icon, disabled }: TComponent) => {
   return (

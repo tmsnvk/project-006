@@ -11,9 +11,9 @@ const ComponentContainer = styled.section`
   grid-row-end: 2;
   width: 90%;
   margin: 5rem auto 0;
-  background-color: ${({ theme }) => theme.color.yellowDark};
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
-  border-radius: 0.75rem;
+  background-color: ${({ theme }) => theme.color.backgroundDark};
+  box-shadow: 0 0.2rem 0.5rem 0 ${({ theme }) => theme.color.secondary};
+  border-radius: 0.5rem;
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
     grid-column-end: 3;

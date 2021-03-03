@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import { CardContext } from "context/CardContext";
 import { LinkTile } from "components/shared/links";
+import { TRender } from "./CategoryLabels.type";
+import { useIsRandom } from "./CategoryLabels.hooks";
 import siteData from "utilities/data/siteData/siteData.json";
 
 const ComponentContainer = styled.section`
@@ -34,21 +35,13 @@ const LinkContainer = styled.div`
   }
 `;
 
-type TRender = {
-  category: string;
-  icon: string[];
-  id: number;
-}
-
 const CategoryLabels = () => {
-  const { setIsRandom } = useContext(CardContext);
-
-  const handleClick = () => setIsRandom(false);
-
+  const { handleClick } = useIsRandom();
+  
   const renderData = siteData.home.categories.map(({ id, category, icon }: TRender) => {
     return (
       <LinkContainer key={id}>
-        <LinkTile url={`/category/${category}`} handleClick={handleClick} render={category} icon={icon} padding={"1.5rem 1.5rem 1.5rem 1.5rem"} />
+        <LinkTile url={`/category/${category}`} handleClick={() => handleClick(category)} render={category} icon={icon} />
       </LinkContainer>
     );
   });

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { CardText, CategoryHeader, CategoryName, ContentContainer, ContentId } from "components/shared/cardtile";
 import Savvied from "./Savvied";
+import { TComponent } from "./CardTile.type";
 
 const ComponentContainer = styled.section`
   grid-column-start: 1;
@@ -23,25 +24,10 @@ const ComponentContainer = styled.section`
 
 const CardContainer = styled.div`
   margin: 2.5rem auto 0;
-  background-color: ${({ theme }) => theme.color.yellowDark};
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
-  border-radius: 0.75rem;
+  background-color: ${({ theme }) => theme.color.backgroundDark};
+  box-shadow: 0 0.2rem 0.5rem 0 ${({ theme }) => theme.color.secondary};
+  border-radius: 0.5rem;
 `;
-
-type TComponent = {
-  cardData: {
-    categoryContent: {
-      cardId: string;
-      paragraphOne: string;
-      paragraphTwo: string;
-      paragraphThree: string;
-      savvied: number;
-    },
-    categoryId: string;
-    categoryName: string;
-    _id: string;
-  }[]
-}
 
 const CardTile = ({ cardData }: TComponent) => {
   const renderComponentData = cardData.map(({ categoryContent, categoryName }) => {

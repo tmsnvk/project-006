@@ -1,13 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { TComponent } from "./ContentId.type";
 
 const ComponentContainer = styled.h2`
-  font-size: ${({ theme }) => theme.fontSize.default};
+  font-size: 1rem;
 `;
-
-type TComponent = {
-  render: string;
-}
 
 const ContentId = ({ render }: TComponent) => {
   return (

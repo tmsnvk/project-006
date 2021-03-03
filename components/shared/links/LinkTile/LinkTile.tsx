@@ -2,20 +2,17 @@ import React from "react";
 import Link from "next/link";
 import styled from "styled-components";
 import { StyledIcon } from "components/shared/utilities";
-
-type TStyledLinkTag = {
-  padding?: string;
-}
+import { TComponent, TStyledLinkTag } from "./LinkTile.type";
 
 const LinkTag = styled.a<TStyledLinkTag>`
-  background-color: ${({ theme }) => theme.color.yellowDark};
+  background-color: ${({ theme }) => theme.color.backgroundDark};
   font-family: ${({ theme }) => theme.fontFamily.secondary};
-  font-size: ${({ theme }) => theme.fontSize.small};
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-align: center;
-  padding: ${({ padding }) => padding ? padding : "0 0 0 0"};
-  box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.blueDark};
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 0.2rem 0.5rem 0 ${({ theme }) => theme.color.secondary};
   border-radius: 0.75rem;
   margin: 2rem 0 2rem 0;
 
@@ -24,13 +21,13 @@ const LinkTag = styled.a<TStyledLinkTag>`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.blueDark};
-    box-shadow: 0px 2px 5px 0px ${({ theme }) => theme.color.grayDark};
+    background-color: ${({ theme }) => theme.color.secondary};
+    box-shadow: 0 0.2rem 0.5rem 0 ${({ theme }) => theme.color.primaryDark};
     transform: scale(1.05);
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.medium}) {
-    font-size: ${({ theme }) => theme.fontSize.large};
+    font-size: 2rem;
   }
 
   @media only screen and (min-width: ${({ theme }) => theme.mediaQuery.large}) {
@@ -42,18 +39,10 @@ const LinkTag = styled.a<TStyledLinkTag>`
   }
 `;
 
-type TComponent = {
-  render: string;
-  icon?: string[];
-  padding?: string;
-  url: string;
-  handleClick?: () => void;
-}
-
-const LinkTile = ({ url, handleClick, render, icon, padding }: TComponent) => {
+const LinkTile = ({ url, handleClick, render, icon }: TComponent) => {
   return (
     <Link href={url} passHref>
-      <LinkTag onClick={handleClick} padding={padding}>
+      <LinkTag onClick={handleClick}>
         {icon ? <StyledIcon icon={icon} /> : null}
         {render}
       </LinkTag>
