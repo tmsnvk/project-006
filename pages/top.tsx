@@ -3,7 +3,6 @@ import Head from "next/head";
 import { LayoutContainer } from "components/shared/containers";
 import { PageText, CardTile } from "components/page/top";
 import { connectToDatabase } from "utilities/mongodb/mongodb";
-import { usePageTracking } from "utilities/helpers/analytics";
 
 export const getServerSideProps = async () => {
   try {
@@ -40,8 +39,6 @@ type TComponent = {
 }
 
 const TopSavvied = ({ cardData }: TComponent) => {
-  usePageTracking("toplist");
-
   return (
     <>
       <Head>

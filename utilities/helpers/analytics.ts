@@ -1,21 +1,19 @@
-import { useEffect } from "react";
-import ReactGA from "react-ga";
-import analyticsConfig from "utilities/config/analyticsConfig";
+export const GA_ID = process.env.NEXT_PUBLIC_GA_KEY;
 
-// initiates google analytics tracking.
-export const usePageTracking = (pageName: string): void => {
-  useEffect(() => {
-    ReactGA.initialize(analyticsConfig.apiKey);
+interface customWindow extends Window {
+  gtag: any
+}
 
-    const logPageview = (pageName: string): void => ReactGA.pageview(pageName);
-    logPageview(pageName);
-  }, [pageName]);
-};
+declare const window: customWindow;
 
-// tracks user activity based on their clicks.
-export const trackClick = (clickId: string): void => {
-  ReactGA.event({
-    category: clickId,
-    action: "click"
-  });
-};
+export const pageview = (url: string): void => {
+  window.gtag("config", GA_ID, {
+    page_path: url,
+  })
+}
+
+export const trackClick = ({ category }: any): void => {
+  window.gtag("event", {
+    event_category: category
+  })
+}

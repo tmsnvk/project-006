@@ -1,6 +1,7 @@
 import React from "react";
 import Document, { DocumentContext, Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import { GA_ID } from "utilities/helpers/analytics";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -36,6 +37,16 @@ class MyDocument extends Document {
         <Head>
           <link rel={"preconnect"} href={"https://fonts.gstatic.com"} />
           <link href={"https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto+Mono:wght@400;600&display=swap"} rel={"stylesheet"} />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+          <script dangerouslySetInnerHTML={{ __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+
+            gtag("config", "${GA_ID}", {
+              page_path: window.location.pathname,
+            });`
+          }} />
         </Head>
         <body>
           <Main />
