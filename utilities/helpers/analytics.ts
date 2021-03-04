@@ -8,12 +8,13 @@ declare const window: customWindow;
 
 export const pageview = (url: string): void => {
   window.gtag("config", GA_ID, {
-    page_path: url,
-  })
-}
+    page_title: document.title,
+    page_path: url
+  });
+};
 
 export const trackClick = ({ category }: any): void => {
-  window.gtag("event", {
+  window.gtag("event", "click", {
     event_category: category
-  })
-}
+  });
+};
